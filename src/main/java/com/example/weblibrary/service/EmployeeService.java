@@ -9,9 +9,19 @@ public interface EmployeeService {
 
     int getSumSalary();
 
-    int getMinSalary();
+    Employee getEmployeeWithMinSalary();
 
-    int getMaxSalary();
+    Employee getEmployeeWithMaxSalary();
 
     List<Employee> getHighSalary();
+
+    List<Employee> newEmployeeList();
+
+    void setSalaryById(int id, int newSalary);
+
+    Employee getEmplpyeeById(int id);
+
+    void deleteEmployeeById(int id);
+
+    List<Employee> salaryHigherThan(int salary);
 }

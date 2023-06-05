@@ -1,5 +1,6 @@
 package com.example.weblibrary.pojo;
 
+import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.context.annotation.Primary;
 
@@ -10,8 +11,12 @@ import org.springframework.context.annotation.Primary;
 @EqualsAndHashCode
 @ToString
 
+@Entity
+@Table(name = "employee")
 public class Employee {
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String name;
     private int salary;
 }

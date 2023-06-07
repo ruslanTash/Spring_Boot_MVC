@@ -1,8 +1,7 @@
-package com.example.weblibrary.pojo;
+package com.example.weblibrary.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.context.annotation.Primary;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -18,5 +17,5 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private int salary;
+    private Integer salary;
 }

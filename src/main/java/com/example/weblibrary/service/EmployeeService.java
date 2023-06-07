@@ -1,5 +1,6 @@
 package com.example.weblibrary.service;
 
+import DTO.EmployeeDTO;
 import com.example.weblibrary.model.Employee;
 
 import java.util.List;
@@ -8,14 +9,14 @@ public interface EmployeeService {
 
 
 
-    List<Employee> getAllEmployees();
+    List<EmployeeDTO> getAllEmployees();
 
     void setSalaryById(int id, int newSalary);
 
 
-    Employee getEmplpyeeById(int id);
+    EmployeeDTO getEmplpyeeById(int id);
 
     void deleteEmployeeById(int id);
 
-    List<Employee> findEmployeeBySalaryGreaterThan(int salary);
+    List<EmployeeDTO> findEmployeeBySalaryGreaterThan(int salary);
 }

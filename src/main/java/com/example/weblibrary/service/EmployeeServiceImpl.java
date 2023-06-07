@@ -1,5 +1,6 @@
 package com.example.weblibrary.service;
 
+import DTO.EmployeeDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import com.example.weblibrary.model.Employee;
@@ -18,8 +19,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 
     @Override
-    public List<Employee> getAllEmployees() {
-        return (List<Employee>) employeeRepository.findAll();
+    public List<EmployeeDTO> getAllEmployees() {
+        List<Employee> employeeList = (List<Employee>) employeeRepository.findAll();
+        return employeeList.stream().
+                map(EmployeeDTO::fromEmployee)
+                .toList();
     }
 
     @Override
@@ -31,9 +35,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public Employee getEmplpyeeById(int id) {
-        return employeeRepository.findById(id)
-                .orElse(new Employee());
+    public EmployeeDTO getEmplpyeeById(int id) {
+        return EmployeeDTO.fromEmployee(employeeRepository.findById(id)
+                .orElse(new Employee()));
     }
 
     @Override
@@ -42,7 +46,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public List<Employee> findEmployeeBySalaryGreaterThan(int lowerBorder) {
+    public List<EmployeeDTO> findEmployeeBySalaryGreaterThan(int lowerBorder) {
         return getAllEmployees().stream()
                 .filter(e -> e.getSalary() > lowerBorder)
                 .toList();

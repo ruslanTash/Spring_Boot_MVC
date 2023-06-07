@@ -1,5 +1,6 @@
 package com.example.weblibrary.controller;
 
+import DTO.EmployeeDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import com.example.weblibrary.model.Employee;
@@ -18,7 +19,7 @@ public class EmployeeController {
 
 //        POST-запрос: localhost:8080/employees - создаёт множество новых сотрудников;
     @PostMapping("/")
-    public List<Employee> newEmployeeList() {
+    public List<EmployeeDTO> newEmployeeList() {
         return employeeService.getAllEmployees();
     }
 
@@ -30,7 +31,7 @@ public class EmployeeController {
     }
 //        GET-запрос: localhost:8080/employees/{id} - возвращает информацию о сотруднике с переданным id;
     @GetMapping("/{id}")
-    public Employee getEmployeeById(@PathVariable int id){
+    public EmployeeDTO getEmployeeById(@PathVariable int id){
         return employeeService.getEmplpyeeById(id);
     }
 
@@ -44,7 +45,7 @@ public class EmployeeController {
 //        GET-запрос: localhost:8080/employees/salaryHigherThan?salary=
 //        - возвращает всех сотрудников, зарплата которых выше переданного параметра salary.
     @GetMapping("/salaryHigherThan")
-    public List<Employee> findEmployeeBySalaryGreaterThan(@RequestParam("salary") int salary){
+    public List<EmployeeDTO> findEmployeeBySalaryGreaterThan(@RequestParam("salary") int salary){
         return employeeService.findEmployeeBySalaryGreaterThan(salary);
     }
 

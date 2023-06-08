@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import com.example.weblibrary.model.Employee;
 import com.example.weblibrary.repository.EmployeeRepository;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.OptionalDouble;
@@ -51,4 +52,18 @@ public class EmployeeServiceImpl implements EmployeeService {
                 .filter(e -> e.getSalary() > lowerBorder)
                 .toList();
     }
+
+    @Override
+    public List<EmployeeDTO> getEmployeeWithHighestSalary() {
+        return getAllEmployees().stream()
+                .filter(e -> e.getSalary() == getMaxSalary())
+                .toList();
+    }
+
+    private Integer getMaxSalary() {
+        return getAllEmployees().stream()
+                .map(e -> e.getSalary())
+                .max(Comparator.naturalOrder()).orElse(null);
+    }
+
 }

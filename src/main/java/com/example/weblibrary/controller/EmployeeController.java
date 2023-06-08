@@ -1,6 +1,7 @@
 package com.example.weblibrary.controller;
 
 import DTO.EmployeeDTO;
+import DTO.PositionDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import com.example.weblibrary.model.Employee;
@@ -48,5 +49,25 @@ public class EmployeeController {
     public List<EmployeeDTO> findEmployeeBySalaryGreaterThan(@RequestParam("salary") int salary){
         return employeeService.findEmployeeBySalaryGreaterThan(salary);
     }
+
+
+//    Реализуйте следующие REST-методы в приложении для учета сотрудников:
+//
+//    GET-запрос: localhost:8080/employees/withHighestSalary - возвращает информацию о сотрудниках с самой высокой зарплатой в фирме;
+    @GetMapping("/withHighestSalary")
+    public List<EmployeeDTO> getEmployeeWithHighestSalary(){
+        return employeeService.getEmployeeWithHighestSalary();
+    }
+
+//    GET-запрос: localhost:8080/employees?position= - принимаут на вход опциональный параметр position
+//    и возвращать информацию о всех сотрудниках фирмы, указанной в параметре должности. Если параметр не указан, то возвращать необходимо всех сотрудников.
+@GetMapping("?position=")
+public List<EmployeeDTO> getEmployeeByPosition(PositionDTO positionDTO)
+//    GET-запрос
+//    localhost:8080/employees/{id}/fullInfo
+//. Он должен возвращать полную информацию о сотруднике (имя, зарплата, название должности) с переданным в пути запроса идентификатором.
+//    GET-запрос
+//    localhost:8080/employees/page?page=
+//            . Он должен возвращать информацию о сотрудниках, основываясь на номере страницы. Если страница не указана, то возвращается первая страница. Номера страниц начинаются с 0. Лимит на количество сотрудников на странице — 10 человек.
 
 }

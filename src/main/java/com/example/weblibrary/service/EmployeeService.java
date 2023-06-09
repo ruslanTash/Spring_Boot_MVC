@@ -1,6 +1,7 @@
 package com.example.weblibrary.service;
 
 import DTO.EmployeeDTO;
+import DTO.EmployeeFullDTO;
 
 import java.util.List;
 
@@ -9,6 +10,8 @@ public interface EmployeeService {
 
 
     List<EmployeeDTO> getAllEmployees();
+
+    List<EmployeeFullDTO> getAllFullEmployees();
 
     void setSalaryById(int id, int newSalary);
 
@@ -21,5 +24,9 @@ public interface EmployeeService {
 
     List<EmployeeDTO> getEmployeeWithHighestSalary();
 
-    List<EmployeeDTO> getEmplpoyeeByPosition(Integer positionId);
+    List<EmployeeFullDTO> getEmplpoyeeByPosition(Integer positionId);
+
+    EmployeeFullDTO getEmployeeFullInfoById(Integer id);
+
+    List<EmployeeDTO> getEmployeeByPage(int page);
 }

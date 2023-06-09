@@ -1,7 +1,6 @@
 package com.example.weblibrary.service;
 
 import DTO.EmployeeDTO;
-import com.example.weblibrary.model.Employee;
 
 import java.util.List;
 
@@ -21,4 +20,6 @@ public interface EmployeeService {
     List<EmployeeDTO> findEmployeeBySalaryGreaterThan(int salary);
 
     List<EmployeeDTO> getEmployeeWithHighestSalary();
+
+    List<EmployeeDTO> getEmplpoyeeByPosition(Integer positionId);
 }

@@ -1,6 +1,7 @@
 package com.example.weblibrary.service;
 
 import DTO.EmployeeDTO;
+import DTO.PositionDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import com.example.weblibrary.model.Employee;
@@ -58,6 +59,20 @@ public class EmployeeServiceImpl implements EmployeeService {
         return getAllEmployees().stream()
                 .filter(e -> e.getSalary() == getMaxSalary())
                 .toList();
+    }
+
+    @Override
+    public List<EmployeeDTO> getEmplpoyeeByPosition(Integer positionId) {
+        long count = getAllEmployees().stream()
+                .filter(e -> e.getPosition().getPositionId().equals(positionId))
+                .count();
+        if (count != 0){
+            return getAllEmployees().stream()
+                    .filter(e -> e.getPosition().getPositionId().equals(positionId))
+                    .toList();
+        }else {
+            return getAllEmployees();
+        }
     }
 
     private Integer getMaxSalary() {

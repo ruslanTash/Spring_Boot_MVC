@@ -1,10 +1,8 @@
 package com.example.weblibrary.controller;
 
 import DTO.EmployeeDTO;
-import DTO.PositionDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import com.example.weblibrary.model.Employee;
 import com.example.weblibrary.service.EmployeeService;
 
 import java.util.List;
@@ -61,8 +59,10 @@ public class EmployeeController {
 
 //    GET-запрос: localhost:8080/employees?position= - принимаут на вход опциональный параметр position
 //    и возвращать информацию о всех сотрудниках фирмы, указанной в параметре должности. Если параметр не указан, то возвращать необходимо всех сотрудников.
-@GetMapping("?position=")
-public List<EmployeeDTO> getEmployeeByPosition(PositionDTO positionDTO)
+@GetMapping("/")
+public List<EmployeeDTO> getEmployeeByPosition(@RequestParam("position") Integer positionId){
+return employeeService.getEmplpoyeeByPosition(positionId);
+}
 //    GET-запрос
 //    localhost:8080/employees/{id}/fullInfo
 //. Он должен возвращать полную информацию о сотруднике (имя, зарплата, название должности) с переданным в пути запроса идентификатором.

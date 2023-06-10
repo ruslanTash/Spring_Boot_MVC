@@ -9,5 +9,4 @@ import java.util.List;
 
 public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
 
-    Page<Employee> findAll(Pageable employeeOfConcretePage);
 }

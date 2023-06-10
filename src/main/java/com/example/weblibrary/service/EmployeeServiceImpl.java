@@ -3,6 +3,7 @@ package com.example.weblibrary.service;
 import DTO.EmployeeDTO;
 import DTO.EmployeeFullDTO;
 import DTO.PositionDTO;
+import com.example.weblibrary.exceptions.EmployeeExceptions;
 import com.example.weblibrary.repository.PagingEmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -34,10 +35,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void setSalaryById(int id, int newSalary) {
-        getAllEmployees().stream()
-                .filter(e -> e.getId() == id)
-                .forEach(e -> e.setSalary(newSalary));
-        employeeRepository.save(employeeRepository.findById(id).orElse(new Employee()));
+        getEmplpyeeById(id).setSalary(newSalary);
+//        employeeRepository.save(employeeRepository.findById(id).orElse(new Employee()));
     }
 
     @Override
@@ -70,11 +69,11 @@ public class EmployeeServiceImpl implements EmployeeService {
         long count = getAllFullEmployees().stream()
                 .filter(e -> e.getPosition().getPositionId().equals(positionId))
                 .count();
-        if (count != 0){
+        if (count != 0) {
             return getAllFullEmployees().stream()
                     .filter(e -> e.getPosition().getPositionId().equals(positionId))
                     .toList();
-        }else {
+        } else {
             return getAllFullEmployees();
         }
     }
@@ -87,13 +86,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public List<EmployeeDTO> getEmployeeByPage(int pageIndex) {
-//        int unitPerPage = 10;
-//        Pageable employeeOfConcretePage = (Pageable) PageRequest.of(pageIndex, unitPerPage);
-//        Page<Employee> page = pagingEmployeeRepository.findAll((org.springframework.data.domain.Pageable) employeeOfConcretePage);
-//
-//        return page.stream().map(EmployeeDTO::fromEmployee)
-//                .toList();
-        return null;
+        int unitPerPage = 10;
+        Pageable employeeOfConcretePage = (Pageable) PageRequest.of(pageIndex, unitPerPage);
+        Page<Employee> page = pagingEmployeeRepository.findAll((org.springframework.data.domain.Pageable) employeeOfConcretePage);
+
+        return page.stream().map(EmployeeDTO::fromEmployee)
+                .toList();
     }
 
 

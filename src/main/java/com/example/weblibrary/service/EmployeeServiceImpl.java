@@ -1,97 +1,117 @@
 package com.example.weblibrary.service;
 
+import DTO.EmployeeDTO;
+import DTO.EmployeeFullDTO;
+import DTO.PositionDTO;
+import com.example.weblibrary.exceptions.EmployeeExceptions;
+import com.example.weblibrary.exceptions.EmployeeNotFoundException;
+import com.example.weblibrary.repository.PagingEmployeeRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import com.example.weblibrary.pojo.Employee;
+import com.example.weblibrary.model.Employee;
 import com.example.weblibrary.repository.EmployeeRepository;
-import org.springframework.web.bind.annotation.PathVariable;
+
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.OptionalDouble;
-import java.util.OptionalInt;
 import java.util.stream.Collectors;
+
 
 @RequiredArgsConstructor
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
     private final EmployeeRepository employeeRepository;
+    private final PagingEmployeeRepository pagingEmployeeRepository;
 
-
-    public List<Employee> getAllEmployees() {
-        return employeeRepository.getAllEmployees();
-    }
 
     @Override
-    public int getSumSalary() {
-        int sum = employeeRepository.getAllEmployees().stream()
-                .mapToInt(a -> a.getSalary())
-                .sum();
-        return sum;
-    }
-
-    @Override
-    public Employee getEmployeeWithMinSalary() {
-        return employeeRepository.getAllEmployees().stream()
-                .min(Comparator.comparingInt(Employee::getSalary))
-                .orElse(new Employee());
-    }
-
-    @Override
-    public Employee getEmployeeWithMaxSalary() {
-        return employeeRepository.getAllEmployees().stream()
-                .max(Comparator.comparingInt(Employee::getSalary))
-                .orElse(new Employee());
-    }
-
-    @Override
-    public List<Employee> getHighSalary() {
-        List<Employee> highSalaryList = employeeRepository.getAllEmployees().stream()
-                .filter(employee -> employee.getSalary() > getAverageSalary())
+    public List<EmployeeDTO> getAllEmployees() {
+        List<Employee> employeeList = (List<Employee>) employeeRepository.findAll();
+        return employeeList.stream().
+                map(EmployeeDTO::fromEmployee)
                 .toList();
-        return highSalaryList;
-    }
-
-    @Override
-    public List<Employee> newEmployeeList() {
-        return employeeRepository.getAllEmployees();
     }
 
     @Override
     public void setSalaryById(int id, int newSalary) {
-        employeeRepository.getAllEmployees().stream()
-                .filter(e->e.getId() == id)
-                .forEach(e->e.setSalary(newSalary));
+        EmployeeDTO employeeDTO = getEmplpyeeById(id);
+        employeeDTO.setSalary(newSalary);
+        Employee employee = employeeDTO.toEmployee(employeeDTO);
+        employeeRepository.save(employee);
     }
 
     @Override
-    public Employee getEmplpyeeById(int id) {
-         return employeeRepository.getAllEmployees().stream()
-                 .filter(e-> e.getId() == id)
-                 .findAny()
-                 .orElse(null);
-            }
+    public EmployeeDTO getEmplpyeeById(int id) {
+        return EmployeeDTO.fromEmployee(employeeRepository.findById(id)
+                .orElseThrow(()-> new EmployeeNotFoundException(id)));
+    }
 
     @Override
     public void deleteEmployeeById(int id) {
-        employeeRepository.getAllEmployees().remove(getEmplpyeeById(id));
+        employeeRepository.deleteById(id);
     }
 
     @Override
-    public List<Employee> salaryHigherThan(int salary) {
-        return employeeRepository.getAllEmployees().stream()
-                .filter(e-> e.getSalary() > salary)
-                .collect(Collectors.toList());
+    public List<EmployeeDTO> findEmployeeBySalaryGreaterThan(int lowerBorder) {
+        return getAllEmployees().stream()
+                .filter(e -> e.getSalary() > lowerBorder)
+                .toList();
+    }
+
+    @Override
+    public List<EmployeeDTO> getEmployeeWithHighestSalary() {
+        return getAllEmployees().stream()
+                .filter(e -> e.getSalary() == getMaxSalary())
+                .toList();
+    }
+
+    @Override
+    public List<EmployeeFullDTO> getEmplpoyeeByPosition(Integer positionId) {
+        long count = getAllFullEmployees().stream()
+                .filter(e -> e.getPosition().getPositionId().equals(positionId))
+                .count();
+        if (count != 0) {
+            return getAllFullEmployees().stream()
+                    .filter(e -> e.getPosition().getPositionId().equals(positionId))
+                    .toList();
+        } else {
+            return getAllFullEmployees();
+        }
+    }
+
+    @Override
+    public EmployeeFullDTO getEmployeeFullInfoById(Integer id) {
+        return EmployeeFullDTO.fromEmployee(employeeRepository.findById(id)
+                .orElseThrow(()-> new EmployeeNotFoundException(id)));
+    }
+
+    @Override
+    public List<EmployeeDTO> getEmployeeByPage(int pageIndex) {
+        int unitPerPage = 10;
+        Pageable employeeOfConcretePage = PageRequest.of(pageIndex, unitPerPage);
+        Page<Employee> page = pagingEmployeeRepository.findAll(employeeOfConcretePage);
+        return page.stream()
+                .map(EmployeeDTO::fromEmployee)
+                .toList();
     }
 
 
-    public int getAverageSalary() {
-        OptionalDouble averageSalary = employeeRepository.getAllEmployees().stream()
-                .mapToInt(a -> a.getSalary())
-                .average();
-        int averageInt = (int) averageSalary.getAsDouble();
-        return averageInt;
+    @Override
+    public List<EmployeeFullDTO> getAllFullEmployees() {
+        List<Employee> employeeList = (List<Employee>) employeeRepository.findAll();
+        return employeeList.stream().
+                map(EmployeeFullDTO::fromEmployee)
+                .toList();
+    }
+
+    private Integer getMaxSalary() {
+        return getAllEmployees().stream()
+                .map(e -> e.getSalary())
+                .max(Comparator.naturalOrder()).orElse(null);
     }
 
 }

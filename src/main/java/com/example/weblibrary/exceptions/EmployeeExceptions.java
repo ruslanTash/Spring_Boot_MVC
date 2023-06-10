@@ -10,6 +10,12 @@ import java.sql.SQLException;
 
 @RestControllerAdvice
 public class EmployeeExceptions {
+    @ExceptionHandler(EmployeeNotFoundException.class)
+    public ResponseEntity<?> handleNotFound(EmployeeNotFoundException e){
+        return ResponseEntity
+                .status(HttpStatus.NOT_FOUND)
+                .body("сотрудник с ID = %d не найден".formatted(e.getId()));
+    }
     @ExceptionHandler
     public ResponseEntity<?> handleIOException(IOException ioException) {
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

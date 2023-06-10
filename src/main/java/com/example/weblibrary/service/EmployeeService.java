@@ -1,27 +1,32 @@
 package com.example.weblibrary.service;
 
-import com.example.weblibrary.pojo.Employee;
+import DTO.EmployeeDTO;
+import DTO.EmployeeFullDTO;
 
 import java.util.List;
 
 public interface EmployeeService {
-    List<Employee> getAllEmployees();
 
-    int getSumSalary();
 
-    Employee getEmployeeWithMinSalary();
 
-    Employee getEmployeeWithMaxSalary();
+    List<EmployeeDTO> getAllEmployees();
 
-    List<Employee> getHighSalary();
-
-    List<Employee> newEmployeeList();
+    List<EmployeeFullDTO> getAllFullEmployees();
 
     void setSalaryById(int id, int newSalary);
 
-    Employee getEmplpyeeById(int id);
+
+    EmployeeDTO getEmplpyeeById(int id);
 
     void deleteEmployeeById(int id);
 
-    List<Employee> salaryHigherThan(int salary);
+    List<EmployeeDTO> findEmployeeBySalaryGreaterThan(int salary);
+
+    List<EmployeeDTO> getEmployeeWithHighestSalary();
+
+    List<EmployeeFullDTO> getEmplpoyeeByPosition(Integer positionId);
+
+    EmployeeFullDTO getEmployeeFullInfoById(Integer id);
+
+    List<EmployeeDTO> getEmployeeByPage(int page);
 }

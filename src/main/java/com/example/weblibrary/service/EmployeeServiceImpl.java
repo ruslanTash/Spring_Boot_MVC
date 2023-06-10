@@ -15,6 +15,7 @@ import com.example.weblibrary.repository.EmployeeRepository;
 import java.awt.print.Pageable;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @RequiredArgsConstructor
@@ -36,7 +37,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void setSalaryById(int id, int newSalary) {
         getEmplpyeeById(id).setSalary(newSalary);
-//        employeeRepository.save(employeeRepository.findById(id).orElse(new Employee()));
+        employeeRepository.save(employeeRepository.findById(id).orElse(new Employee()));
     }
 
     @Override
@@ -89,8 +90,8 @@ public class EmployeeServiceImpl implements EmployeeService {
         int unitPerPage = 10;
         Pageable employeeOfConcretePage = (Pageable) PageRequest.of(pageIndex, unitPerPage);
         Page<Employee> page = pagingEmployeeRepository.findAll((org.springframework.data.domain.Pageable) employeeOfConcretePage);
-
-        return page.stream().map(EmployeeDTO::fromEmployee)
+        return page.stream()
+                .map(EmployeeDTO::fromEmployee)
                 .toList();
     }
 

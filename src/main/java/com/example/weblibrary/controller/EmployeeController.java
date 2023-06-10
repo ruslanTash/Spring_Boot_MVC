@@ -65,19 +65,20 @@ public class EmployeeController {
     public List<EmployeeFullDTO> getEmployeeByPosition(@RequestParam("position") Integer positionId) {
         return employeeService.getEmplpoyeeByPosition(positionId);
     }
-//    GET-запрос: localhost:8080/employees/{id}/fullInfo
+
+    //    GET-запрос: localhost:8080/employees/{id}/fullInfo
 //. Он должен возвращать полную информацию о сотруднике (имя, зарплата, название должности) с переданным в пути запроса идентификатором.
     @GetMapping("/{id}/fullInfo")
-    public EmployeeFullDTO getEmployeeFullInfoById(@PathVariable(name = "id") Integer id){
+    public EmployeeFullDTO getEmployeeFullInfoById(@PathVariable(name = "id") Integer id) {
         return employeeService.getEmployeeFullInfoById(id);
     }
-//    GET-запрос: localhost:8080/employees/page?page=
+
+    //    GET-запрос: localhost:8080/employees/page?page=
 //. Он должен возвращать информацию о сотрудниках, основываясь на номере страницы.
 // Если страница не указана, то возвращается первая страница.
     @GetMapping("/page")
-    public List<EmployeeDTO> getEmployeeByPage(@RequestParam("pageIndex") int page){
+    public List<EmployeeDTO> getEmployeeByPage(@RequestParam("pageIndex") int page) {
         return employeeService.getEmployeeByPage(page);
     }
-
 
 }

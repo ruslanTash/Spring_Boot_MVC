@@ -8,11 +8,12 @@ import com.example.weblibrary.repository.PagingEmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import com.example.weblibrary.model.Employee;
 import com.example.weblibrary.repository.EmployeeRepository;
 
-import java.awt.print.Pageable;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -36,8 +37,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void setSalaryById(int id, int newSalary) {
-        getEmplpyeeById(id).setSalary(newSalary);
-        employeeRepository.save(employeeRepository.findById(id).orElse(new Employee()));
+//        getEmplpyeeById(id).setSalary(newSalary);
+//        employeeRepository.save(employeeRepository.findById(id).orElse(new Employee()));
+        EmployeeDTO employeeDTO = getEmplpyeeById(id);
+        employeeDTO.setSalary(newSalary);
+        Employee employee = employeeDTO.toEmployee(employeeDTO);
+        employeeRepository.save(employee);
     }
 
     @Override
@@ -88,8 +93,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<EmployeeDTO> getEmployeeByPage(int pageIndex) {
         int unitPerPage = 10;
-        Pageable employeeOfConcretePage = (Pageable) PageRequest.of(pageIndex, unitPerPage);
-        Page<Employee> page = pagingEmployeeRepository.findAll((org.springframework.data.domain.Pageable) employeeOfConcretePage);
+        Pageable employeeOfConcretePage = PageRequest.of(pageIndex, unitPerPage);
+        Page<Employee> page = pagingEmployeeRepository.findAll(employeeOfConcretePage);
         return page.stream()
                 .map(EmployeeDTO::fromEmployee)
                 .toList();

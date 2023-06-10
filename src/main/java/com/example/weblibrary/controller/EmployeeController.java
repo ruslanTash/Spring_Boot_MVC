@@ -61,7 +61,7 @@ public class EmployeeController {
 
     //    GET-запрос: localhost:8080/employees?position= - принимаут на вход опциональный параметр position
 //    и возвращать информацию о всех сотрудниках фирмы, указанной в параметре должности. Если параметр не указан, то возвращать необходимо всех сотрудников.
-    @GetMapping("/")
+    @GetMapping("")
     public List<EmployeeFullDTO> getEmployeeByPosition(@RequestParam("position") Integer positionId) {
         return employeeService.getEmplpoyeeByPosition(positionId);
     }
@@ -77,7 +77,7 @@ public class EmployeeController {
 //. Он должен возвращать информацию о сотрудниках, основываясь на номере страницы.
 // Если страница не указана, то возвращается первая страница.
     @GetMapping("/page")
-    public List<EmployeeDTO> getEmployeeByPage(@RequestParam("pageIndex") int page) {
+    public List<EmployeeDTO> getEmployeeByPage(@RequestParam("page") int page) {
         return employeeService.getEmployeeByPage(page);
     }
 

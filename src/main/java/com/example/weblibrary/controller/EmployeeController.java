@@ -75,7 +75,7 @@ public class EmployeeController {
 
     //    GET-запрос: localhost:8080/employees/page?page=
 //. Он должен возвращать информацию о сотрудниках, основываясь на номере страницы.
-// Если страница не указана, то возвращается первая страница.
+
     @GetMapping("/page")
     public List<EmployeeDTO> getEmployeeByPage(@RequestParam("page") int page) {
         return employeeService.getEmployeeByPage(page);

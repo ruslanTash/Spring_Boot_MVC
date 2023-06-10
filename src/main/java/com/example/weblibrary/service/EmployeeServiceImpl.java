@@ -4,6 +4,7 @@ import DTO.EmployeeDTO;
 import DTO.EmployeeFullDTO;
 import DTO.PositionDTO;
 import com.example.weblibrary.exceptions.EmployeeExceptions;
+import com.example.weblibrary.exceptions.EmployeeNotFoundException;
 import com.example.weblibrary.repository.PagingEmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -37,8 +38,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void setSalaryById(int id, int newSalary) {
-//        getEmplpyeeById(id).setSalary(newSalary);
-//        employeeRepository.save(employeeRepository.findById(id).orElse(new Employee()));
         EmployeeDTO employeeDTO = getEmplpyeeById(id);
         employeeDTO.setSalary(newSalary);
         Employee employee = employeeDTO.toEmployee(employeeDTO);
@@ -48,7 +47,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public EmployeeDTO getEmplpyeeById(int id) {
         return EmployeeDTO.fromEmployee(employeeRepository.findById(id)
-                .orElse(new Employee()));
+                .orElseThrow(()-> new EmployeeNotFoundException(id)));
     }
 
     @Override
@@ -87,7 +86,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public EmployeeFullDTO getEmployeeFullInfoById(Integer id) {
         return EmployeeFullDTO.fromEmployee(employeeRepository.findById(id)
-                .orElse(new Employee()));
+                .orElseThrow(()-> new EmployeeNotFoundException(id)));
     }
 
     @Override

@@ -20,7 +20,8 @@ public class Report implements Serializable {
     @Column(name = "report_id")
     private Integer id;
     //    Название отдела.
-    @Column(name = "report")
-    private String report;
+    @Lob
+    @Column(name = "data", columnDefinition = "text")
+    private String data;
 
 }

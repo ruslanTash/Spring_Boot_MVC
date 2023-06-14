@@ -5,9 +5,11 @@ import com.example.weblibrary.model.Position;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Setter
 @Getter
-public class EmployeeFullDTO {
+public class EmployeeFullDTO implements Serializable {
     private Integer id;
     private String name;
     private Integer salary;

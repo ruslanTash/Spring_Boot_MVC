@@ -1,11 +1,12 @@
 package com.example.weblibrary.service;
 
-import DTO.EmployeeDTO;
-import DTO.EmployeeFullDTO;
-import DTO.PositionDTO;
-import com.example.weblibrary.exceptions.EmployeeExceptions;
+import com.example.weblibrary.DTO.EmployeeDTO;
+import com.example.weblibrary.DTO.EmployeeFullDTO;
 import com.example.weblibrary.exceptions.EmployeeNotFoundException;
+import com.example.weblibrary.exceptions.ReportNotFoundException;
+import com.example.weblibrary.model.Report;
 import com.example.weblibrary.repository.PagingEmployeeRepository;
+import com.example.weblibrary.repository.ReportRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -13,8 +14,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import com.example.weblibrary.model.Employee;
 import com.example.weblibrary.repository.EmployeeRepository;
+import org.springframework.web.multipart.MultipartFile;
 
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -99,6 +104,11 @@ public class EmployeeServiceImpl implements EmployeeService {
                 .toList();
     }
 
+    @Override
+    public void uploadEmployees(MultipartFile multipartFile) throws IOException {
+        File file = new File("new.json");
+        Files.write(file.toPath(), multipartFile.getBytes());
+    }
 
     @Override
     public List<EmployeeFullDTO> getAllFullEmployees() {
@@ -113,5 +123,6 @@ public class EmployeeServiceImpl implements EmployeeService {
                 .map(e -> e.getSalary())
                 .max(Comparator.naturalOrder()).orElse(null);
     }
+
 
 }

@@ -1,4 +1,4 @@
-package DTO;
+package com.example.weblibrary.DTO;
 
 import com.example.weblibrary.model.Employee;
 import com.example.weblibrary.model.Position;

@@ -8,21 +8,23 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Entity
-@Table(name = "position")
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
+@Entity
+@Table(name = "position")
 public class Position {
     @Id
-    @Column(name = "position_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer positionId;
     private String positionName;
 
-    @OneToMany(cascade = CascadeType.ALL)
+//    @OneToMany(mappedBy = "employee")
 //    @JoinColumn(name = "employee_id")
-    private List<Employee> employeeByPosition;
+//    private List<Employee> employees;
+
 
 }

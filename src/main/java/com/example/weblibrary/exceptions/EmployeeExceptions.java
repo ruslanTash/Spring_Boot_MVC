@@ -16,6 +16,14 @@ public class EmployeeExceptions {
                 .status(HttpStatus.NOT_FOUND)
                 .body("сотрудник с ID = %d не найден".formatted(e.getId()));
     }
+
+    @ExceptionHandler(ReportNotFoundException.class)
+    public ResponseEntity<?> handleNotFound(ReportNotFoundException e){
+        return ResponseEntity
+                .status(HttpStatus.NOT_FOUND)
+                .body("запрос с ID = %d не найден".formatted(e.getId()));
+    }
+
     @ExceptionHandler
     public ResponseEntity<?> handleIOException(IOException ioException) {
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

@@ -1,24 +1,25 @@
-package DTO;
+package com.example.weblibrary.DTO;
 
 import com.example.weblibrary.model.Employee;
-import com.example.weblibrary.model.Position;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Setter
 @Getter
-public class EmployeeDTO {
+public class EmployeeDTO implements Serializable {
     private Integer id;
     private String name;
     private Integer salary;
-//    private Position position;
+    private Integer department;
+
 
     public static EmployeeDTO fromEmployee(Employee employee){
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setId(employee.getId());
         employeeDTO.setName(employee.getName());
         employeeDTO.setSalary(employee.getSalary());
-//        employeeDTO.setPosition(employee.getPosition());
         return employeeDTO;
     }
 
@@ -27,7 +28,6 @@ public class EmployeeDTO {
         employee.setId(this.getId());
         employee.setName(this.getName());
         employee.setSalary(this.getSalary());
-//        employee.setPosition(this.getPosition());
         return employee;
     }
 }

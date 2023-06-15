@@ -24,8 +24,9 @@ public class ReportServiceImpl implements ReportService {
 
     @Override
     public Integer getReports() {
-//@Query(value = "SELECT new weblibrary.model.Report(count(e.id), p.name, max(e.salary), min(e.salary), avg(e.salary))FROM Employee e join fetch Position p WHERE e.position = p GROUP BY p.id")
-//        List<Report> createReport();
+
         return 1;
     }
+
+
 }

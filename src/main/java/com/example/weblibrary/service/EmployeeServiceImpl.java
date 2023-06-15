@@ -7,6 +7,7 @@ import com.example.weblibrary.exceptions.ReportNotFoundException;
 import com.example.weblibrary.model.Report;
 import com.example.weblibrary.repository.PagingEmployeeRepository;
 import com.example.weblibrary.repository.ReportRepository;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -108,6 +109,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     public void uploadEmployees(MultipartFile multipartFile) throws IOException {
         File file = new File("new.json");
         Files.write(file.toPath(), multipartFile.getBytes());
+        ObjectMapper objectMapper = new ObjectMapper();
+        Employee employee = objectMapper.readValue(file, Employee.class);
+        employeeRepository.save(employee);
     }
 
     @Override

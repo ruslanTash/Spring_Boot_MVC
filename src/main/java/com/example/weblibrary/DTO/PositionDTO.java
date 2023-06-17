@@ -1,11 +1,14 @@
-package DTO;
+package com.example.weblibrary.DTO;
 
 import com.example.weblibrary.model.Position;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.io.Serializable;
+
 @Setter
 @Getter
-public class PositionDTO {
+public class PositionDTO implements Serializable {
     private Integer id;
     private String positionName;
 

@@ -1,28 +1,29 @@
 package com.example.weblibrary.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
+import java.io.Serializable;
 import java.util.List;
 
-@Entity
-@Table(name = "position")
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class Position {
+@ToString
+@Entity
+@Table(name = "position")
+public class Position implements Serializable {
     @Id
-    @Column(name = "position_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer positionId;
     private String positionName;
 
-    @OneToMany(cascade = CascadeType.ALL)
+//    @OneToMany(mappedBy = "employee")
 //    @JoinColumn(name = "employee_id")
-    private List<Employee> employeeByPosition;
+//    private List<Employee> employees;
+
 
 }

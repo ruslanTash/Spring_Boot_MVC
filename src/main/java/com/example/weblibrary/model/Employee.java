@@ -3,6 +3,8 @@ package com.example.weblibrary.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serializable;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -13,15 +15,15 @@ import lombok.*;
 @Entity
 @Table(name = "employee")
 
-public class Employee {
+public class Employee implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "employee_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
     private Integer salary;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "position_id")
     private Position position;
+
 }

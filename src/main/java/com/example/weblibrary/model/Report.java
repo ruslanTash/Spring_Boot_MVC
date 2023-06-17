@@ -17,7 +17,7 @@ public class Report implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "report_id")
     private Integer id;
-    //    Название отдела.
+
     @Lob
     @Column(name = "data", columnDefinition = "text")
     private String data;

@@ -47,7 +47,7 @@ public class ReportServiceImpl implements ReportService {
 
             String fileName =
                     "c:\\Users\\Ruslan\\" +
-                    "report" + report.getId();
+                    "report" + report.getId() + ".json";
             File file = new File(fileName);
             file.createNewFile();
             report.setPathFile(fileName);

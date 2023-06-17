@@ -4,7 +4,10 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.Accessors;
 
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.nio.file.Path;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -20,7 +23,10 @@ public class Report implements Serializable {
 
     @Lob
     @Column(name = "data", columnDefinition = "text")
+    @Transient
     private String data;
+
+    private String pathFile;
 
     public Report(String data) {
         this.data = data;
@@ -29,4 +35,5 @@ public class Report implements Serializable {
     public Report(String positionName, Long count, Integer max, Integer min, Double avg) {
         this.data = "Position: " + positionName + ", countOfEmployee: " + count + ", maxSalary: " + max + ", minSalary: " + min + ", avgSalary: " + avg;
     }
+
  }

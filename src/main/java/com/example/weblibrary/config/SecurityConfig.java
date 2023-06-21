@@ -21,7 +21,6 @@ import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-
 import javax.sql.DataSource;
 
 
@@ -77,19 +76,15 @@ import javax.sql.DataSource;
         }
 
         // Создаем бин SecurityFilterChain для настройки фильтра безопасности.
+
         @Bean
-        public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-            http
-                    .authorizeHttpRequests(requests -> requests
-                            .requestMatchers("/vertretungsplan").hasAnyRole("USER", "ADMIN")
-                            .anyRequest().authenticated()
-                    )
-                    .formLogin(form -> form
-                            .loginPage("/login")
-                            .permitAll()
-                    )
-                    .logout(logout -> logout
-                            .permitAll());
+        public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+            http.csrf()
+                    .disable()
+                    .authorizeHttpRequests(this::customizeRequest);
+            // Цепочка фильтров безопасности для обработки входящих запросов,
+            // основанная на настройках безопасности,
+            // определенных с помощью метода 'customizeRequest'.
 
             return http.build();
         }

@@ -28,20 +28,9 @@ public class EmployeeController {
         return employeeService.getAllEmployees();
     }
 
-    @PutMapping("/{id}/{newSalary}")
-    public void setSalaryById(@PathVariable int id,
-                              @PathVariable int newSalary) {
-        employeeService.setSalaryById(id, newSalary);
-    }
-
     @GetMapping("/{id}")
     public EmployeeDTO getEmployeeById(@PathVariable int id) {
         return employeeService.getEmplpyeeById(id);
-    }
-
-    @DeleteMapping("/{id}")
-    public void deleteEmployeeById(@PathVariable int id) {
-        employeeService.deleteEmployeeById(id);
     }
 
     @GetMapping("/salaryHigherThan")
@@ -69,9 +58,4 @@ public class EmployeeController {
         return employeeService.getEmployeeByPage(page);
     }
 
-
-    @PostMapping(value = "/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public void uploadEmployees(@RequestParam("file") MultipartFile multipartFile) throws IOException {
-        employeeService.uploadEmployees(multipartFile);
-    }
 }

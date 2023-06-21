@@ -1,4 +1,4 @@
-package com.example.weblibrary.service;
+package com.example.weblibrary.config;
 
 import com.example.weblibrary.model.AuthUser;
 import org.springframework.security.core.GrantedAuthority;

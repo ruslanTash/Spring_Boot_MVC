@@ -1,6 +1,5 @@
-package com.example.weblibrary.config;
+package com.example.weblibrary.security;
 
-import com.example.weblibrary.model.AuthUser;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

@@ -1,4 +1,5 @@
-package com.example.weblibrary.model;
+package com.example.weblibrary.security;
+
 
 import jakarta.persistence.*;
 import lombok.Getter;

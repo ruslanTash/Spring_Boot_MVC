@@ -1,7 +1,5 @@
-package com.example.weblibrary.config;
+package com.example.weblibrary.security;
 
-import com.example.weblibrary.model.AuthUser;
-import com.example.weblibrary.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

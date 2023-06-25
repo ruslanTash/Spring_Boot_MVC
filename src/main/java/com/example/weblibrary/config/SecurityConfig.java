@@ -26,7 +26,6 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 @Configuration
 public class SecurityConfig {
-
     @Autowired
     // Внедряем зависимость UserDetailsService
     // для работы с данными пользователя.
@@ -50,7 +49,6 @@ public class SecurityConfig {
         return authProvider;
     }
 
-
     // Создаем бин userDetailsManager.
     // Он использует JdbcUserDetailsManager для работы с базой данных.
     @Bean
@@ -61,6 +59,7 @@ public class SecurityConfig {
         // и authenticationManager для работы с базой данных
         JdbcUserDetailsManager jdbcUserDetailsManager =
                 new JdbcUserDetailsManager(dataSource);
+
         jdbcUserDetailsManager.setAuthenticationManager(authenticationManager);
         return jdbcUserDetailsManager;
     }
@@ -74,19 +73,14 @@ public class SecurityConfig {
     }
 
     // Создаем бин SecurityFilterChain для настройки фильтра безопасности.
-
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.csrf()
                 .disable()
                 .authorizeHttpRequests(this::customizeRequest);
-        // Цепочка фильтров безопасности для обработки входящих запросов,
-        // основанная на настройках безопасности,
-        // определенных с помощью метода 'customizeRequest'.
 
         return http.build();
     }
-
 
     // Метод для настройки прав доступа к URL на основе ролей пользователей
     private void customizeRequest(AuthorizeHttpRequestsConfigurer<HttpSecurity>.AuthorizationManagerRequestMatcherRegistry registry) {
@@ -96,8 +90,7 @@ public class SecurityConfig {
                     .requestMatchers(new AntPathRequestMatcher("/**"))
                     .hasAnyRole("USER")   // Только для пользователей с ролью USER.
                     .and()
-                    .formLogin()
-                    .permitAll()  // Разрешаем всем доступ к форме ввода.
+                    .formLogin().permitAll()  // Разрешаем всем доступ к форме ввода.
                     .and()
                     .logout().logoutUrl("/logout");  // Устанавливаем URL
             // для выхода из системы.

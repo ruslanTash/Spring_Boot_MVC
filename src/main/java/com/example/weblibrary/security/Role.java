@@ -16,7 +16,7 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String role;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "auth_user_id")
-    private AuthUser user;
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "auth_user_id")
+//    private AuthUser user;
 }

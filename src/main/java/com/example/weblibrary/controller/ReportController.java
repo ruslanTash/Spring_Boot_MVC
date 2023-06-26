@@ -19,7 +19,7 @@ public class ReportController {
 
 
     @GetMapping("/{id}")
-    public Report getReportById(@PathVariable("id") Integer id) {
+    public String getReportById(@PathVariable("id") Integer id) {
         return reportService.getReportById(id);
     }
 }

@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @Entity
@@ -23,4 +25,8 @@ public class AuthUser {
 
     // Создаем поле password для хранения пароля пользователя
     private String password;
+
+    @JoinColumn(name = "user_id")
+    @OneToMany(fetch = FetchType.EAGER)
+    private List<Role> roles;
 }

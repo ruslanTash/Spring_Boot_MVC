@@ -20,7 +20,10 @@ public class Report implements Serializable {
 
     @Lob
     @Column(name = "data", columnDefinition = "text")
+    @Transient
     private String data;
+
+    private String pathFile;
 
     public Report(String data) {
         this.data = data;

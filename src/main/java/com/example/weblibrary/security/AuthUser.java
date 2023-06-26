@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Collection;
 import java.util.List;
 
 @Getter
@@ -29,4 +30,9 @@ public class AuthUser {
     @JoinColumn(name = "user_id")
     @OneToMany(fetch = FetchType.EAGER)
     private List<Role> roles;
+
+
+    public Collection<Role> getRoleList() {
+        return this.getRoles();
+    }
 }

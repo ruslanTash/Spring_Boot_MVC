@@ -1,5 +1,6 @@
 package com.example.weblibrary.config;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,11 +26,12 @@ import javax.sql.DataSource;
 
 @EnableWebSecurity
 @Configuration
+@RequiredArgsConstructor
 public class SecurityConfig {
     @Autowired
     // Внедряем зависимость UserDetailsService
     // для работы с данными пользователя.
-    private UserDetailsService userDetailsService;
+    private final UserDetailsService userDetailsService;
 
     @Bean
     // Создаем экземпляр PasswordEncoder для шифрования паролей.

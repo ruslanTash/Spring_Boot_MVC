@@ -3,21 +3,28 @@ package com.example.weblibrary.security;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class SecurityUserPrincipal implements UserDetails {
     private AuthUser user;
+    private List<SecurityGrantedAthorities> roleList;
 
     // Конструктор класса SecurityUserPrincipal,
     // принимающий объект класса AuthUser.
     public SecurityUserPrincipal(AuthUser user) {
         this.user = user;
+        this.roleList = user.getRoleList().stream()
+                .map(SecurityGrantedAthorities::new)
+                .toList();
     }
+
 
     @Override
     // Возвращает авторитеты (роли) пользователя.
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return new ArrayList<>(roleList);
     }
 
     @Override

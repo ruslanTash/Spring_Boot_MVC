@@ -21,9 +21,4 @@ public class Position implements Serializable {
     private Integer positionId;
     private String positionName;
 
-//    @OneToMany(mappedBy = "employee")
-//    @JoinColumn(name = "employee_id")
-//    private List<Employee> employees;
-
-
 }

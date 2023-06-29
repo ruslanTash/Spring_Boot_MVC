@@ -77,7 +77,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         List<EmployeeDTO> employees = getAllEmployees().stream()
                 .filter(e -> e.getSalary() > lowerBorder)
                 .toList();
-        logger.info("Запрошены сотрудники с зарплатой большей чем {}", lowerBorder );
+        logger.info("Запрошены сотрудники с зарплатой большей чем {}", lowerBorder);
         return employees;
     }
 

@@ -5,6 +5,8 @@ import com.example.weblibrary.model.Report;
 import com.example.weblibrary.repository.ReportRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -23,11 +25,16 @@ public class ReportServiceImpl implements ReportService {
 
     private final ReportRepository reportRepository;
     ObjectMapper objectMapper = new ObjectMapper();
+    private static final Logger logger = LoggerFactory.getLogger(ReportService.class);
 
     @Override
     public String getReportById(Integer id) {
         Report report = reportRepository.findById(id)
-                .orElseThrow(()-> new ReportNotFoundException(id));
+                .orElseThrow(()-> {
+                    logger.error("Отчёт с ID = " + id + " не найден");
+                    return new ReportNotFoundException(id);
+                });
+        logger.info("Вызван метод getReportById, ReportId = " + id);
         return report.getPathFile();
     }
 
@@ -46,8 +53,10 @@ public class ReportServiceImpl implements ReportService {
             report.setPathFile(fileName);
             writeTextToFile(text, fileName);
             reportRepository.save(report);
+            logger.info("Отчёт сохранён, reportId = " + report.getId());
             return report.getId();
         }  catch (IOException e) {
+            logger.error("Отчёт не сформирован");
             e.printStackTrace();
         } return 0;
     }

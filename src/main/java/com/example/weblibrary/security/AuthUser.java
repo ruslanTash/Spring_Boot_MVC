@@ -16,7 +16,7 @@ public class AuthUser {
     @Id
     // Используем AUTO-генерацию идентификаторов.
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
 
     // Создаем поле username для хранения имени пользователя.
     // Устанавливаем ограничение на уникальность значения в колонке

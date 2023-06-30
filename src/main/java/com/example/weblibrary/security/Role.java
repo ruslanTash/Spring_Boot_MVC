@@ -14,7 +14,7 @@ public class Role {
     @Id
     // Используем AUTO-генерацию идентификаторов.
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
     private String role;
 //    @ManyToOne(fetch = FetchType.LAZY)
 //    @JoinColumn(name = "auth_user_id")

@@ -1,0 +1,68 @@
+23:44:33.506 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 8692 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:44:33.507 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+23:44:33.838 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:44:33.868 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+23:44:34.123 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:44:34.138 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:44:34.138 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:44:34.138 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+23:44:34.179 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:44:34.180 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 651 ms
+23:44:34.249 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:44:34.275 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+23:44:34.276 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+23:44:34.338 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:44:34.405 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:44:34.413 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:44:34.495 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d2fc130
+23:44:34.496 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:44:34.524 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@21280cbb
+23:44:34.645 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:44:34.988 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:44:35.030 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:44:35.190 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+23:44:35.438 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:44:35.494 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ef89e43, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bd76b79, org.springframework.security.web.context.SecurityContextHolderFilter@7685912e, org.springframework.security.web.header.HeaderWriterFilter@7677d320, org.springframework.security.web.authentication.logout.LogoutFilter@28fa0ff8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ab5c335, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@f7a19c4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5fdfa35d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17856f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5304cee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43165282, org.springframework.security.web.access.ExceptionTranslationFilter@b65cc8b, org.springframework.security.web.access.intercept.AuthorizationFilter@3aede2ff]
+23:44:35.823 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:44:35.834 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:44:35.839 [main] INFO  c.e.weblibrary.WebLibraryApplication - Started WebLibraryApplication in 2.499 seconds (process running for 2.829)
+23:44:49.486 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:44:49.487 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:44:49.487 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+23:47:27.031 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:47:27.032 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:47:27.034 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:48:02.546 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 6616 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:48:02.547 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+23:48:02.885 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:48:02.915 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+23:48:03.152 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:48:03.157 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:48:03.158 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:48:03.158 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+23:48:03.235 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:48:03.235 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 666 ms
+23:48:03.310 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:48:03.337 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+23:48:03.338 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+23:48:03.404 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:48:03.468 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:48:03.477 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:48:03.557 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a0f87e5
+23:48:03.558 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:48:03.583 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@182cc69e
+23:48:03.708 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:48:04.055 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:48:04.099 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:48:04.264 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+23:48:04.522 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:48:04.583 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c98079, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5135b8a3, org.springframework.security.web.context.SecurityContextHolderFilter@76e5d5e5, org.springframework.security.web.header.HeaderWriterFilter@5327c503, org.springframework.security.web.authentication.logout.LogoutFilter@1ec690bd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4eba3c3f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@23972e02, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4ef12d7e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e368085, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46e2a773, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@375376d5, org.springframework.security.web.access.ExceptionTranslationFilter@65640109, org.springframework.security.web.access.intercept.AuthorizationFilter@6f371390]
+23:48:04.955 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:48:04.965 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:48:04.970 [main] INFO  c.e.weblibrary.WebLibraryApplication - Started WebLibraryApplication in 2.588 seconds (process running for 2.928)
+23:48:31.327 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:48:31.327 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:48:31.328 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+23:48:35.278 [http-nio-8080-exec-2] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 110 ms
+23:48:39.948 [http-nio-8080-exec-1] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+23:48:58.916 [http-nio-8080-exec-3] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 500 не найден

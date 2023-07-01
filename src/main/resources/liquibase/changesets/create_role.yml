@@ -4,7 +4,7 @@ databaseChangeLog:
       author: developer # имя разработчика, который добавил набор изменений
       changes: # список изменений в этом наборе
         - createTable: # команда liquibase — создает таблицу
-            tableName: role # название таблицы
+            tableName: roles # название таблицы
             columns: # колонки к данной таблице
               - column: # колонка
                   name: id # название колонки

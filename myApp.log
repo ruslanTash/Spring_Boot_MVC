@@ -1873,3 +1873,179 @@ Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
 	... 18 common frames omitted
+20:47:46.205 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 7008 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+20:47:46.207 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+20:47:46.542 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:47:46.572 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 4 JPA repository interfaces.
+20:47:46.815 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:47:46.819 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:47:46.820 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:47:46.820 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+20:47:46.860 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:47:46.861 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 632 ms
+20:47:46.921 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:47:47.005 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6424e613
+20:47:47.006 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:47:47.076 [main] INFO  liquibase.database - Set default schema name to public
+20:47:47.190 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:47:47.194 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.225 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.226 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.228 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.239 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+20:47:47.256 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.257 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:47:47.257 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.258 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.273 [main] INFO  liquibase.changelog - Table report created
+20:47:47.273 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 5ms
+20:47:47.274 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.275 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.275 [main] INFO  liquibase - Update command completed successfully.
+20:47:47.276 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.276 [main] INFO  liquibase.lockservice - Successfully released change log lock
+20:47:47.313 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:47:47.338 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+20:47:47.339 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+20:47:47.406 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:47:47.478 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:47:47.503 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@24954e82
+20:47:47.620 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:47:47.945 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20:47:47.960 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:47:48.156 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+20:47:48.412 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:47:48.477 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@711cd6f9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cb3de26, org.springframework.security.web.context.SecurityContextHolderFilter@2d260f2a, org.springframework.security.web.header.HeaderWriterFilter@1e295ef1, org.springframework.security.web.authentication.logout.LogoutFilter@db5e88a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26c9225a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5941a2ad, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7307e418, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b8502e7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48531d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30d5668a, org.springframework.security.web.access.ExceptionTranslationFilter@3f27a95b, org.springframework.security.web.access.intercept.AuthorizationFilter@71639428]
+20:47:48.839 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:47:48.851 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:47:48.856 [main] INFO  c.e.weblibrary.WebLibraryApplication - Started WebLibraryApplication in 2.811 seconds (process running for 3.126)
+20:48:14.824 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:48:14.824 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:48:14.825 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+20:48:34.150 [http-nio-8080-exec-5] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+20:48:48.080 [http-nio-8080-exec-9] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+20:49:29.927 [http-nio-8080-exec-3] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 118 ms
+20:51:05.945 [http-nio-8080-exec-6] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = 1
+21:20:19.233 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:20:19.234 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:20:19.236 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:05:05.506 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:09:29.205 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:18:14.194 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:18:14.198 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:18:48.652 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:18:48.656 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:19:18.529 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:19:18.533 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:19:47.410 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:19:47.413 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:22:33.003 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:23:10.635 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:23:10.639 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:23:25.177 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:23:25.181 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:25:43.820 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:25:43.825 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:34:29.015 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:34:29.017 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:34:29.018 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:34:29.018 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:34:29.018 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:35:44.505 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:35:44.507 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:35:44.508 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:35:44.508 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:35:44.508 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:36:34.127 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:34.130 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:34.130 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:34.130 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:34.131 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:36:56.451 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:56.454 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:56.454 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:56.454 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:56.454 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:37:21.767 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:21.770 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:21.770 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:21.771 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:21.771 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:37:33.562 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:33.566 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:37:33.571 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:33.572 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:33.572 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:33.572 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:33.573 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:37:33.579 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:41:59.318 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1 не найден
+16:42:41.095 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:42:41.099 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:43:29.299 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:44:25.178 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:44:45.163 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:45:25.368 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:45:25.372 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:45:30.775 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:46:21.320 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:46:23.537 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:46:23.540 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:54:18.385 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:55:53.446 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:56:24.921 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:56:38.563 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:57:16.365 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+17:02:29.883 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:02:35.810 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:02:35.813 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+17:09:59.770 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:10:16.872 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:10:16.875 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+17:33:07.133 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:33:07.137 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+17:50:29.712 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:50:29.715 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+17:50:46.723 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:50:46.725 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+17:50:59.344 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:50:59.346 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+17:51:14.866 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:51:14.869 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+17:55:28.120 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:28.122 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:28.123 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:28.123 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:28.123 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+17:55:39.539 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:39.542 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:39.542 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:39.543 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:39.543 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+18:09:34.134 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:09:34.136 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрос сотрудников с positionId = 1
+18:09:34.137 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:12:44.612 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+18:13:10.580 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+18:13:24.811 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 3
+18:13:58.096 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 3
+18:14:30.730 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 2
+18:14:55.738 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+18:22:58.680 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:35:56.931 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.945 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:36:11.947 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрос сотрудников с positionId = 1
+18:36:11.948 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:36:11.959 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.960 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.961 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.961 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.961 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+18:36:11.963 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.963 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+18:36:11.966 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+18:36:11.968 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:36:40.865 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:41:44.321 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:44:58.842 [main] INFO  c.e.weblibrary.service.ReportService - Вызван метод getReportById, ReportId = 1
+18:51:55.482 [main] INFO  c.e.weblibrary.service.ReportService - Вызван метод getReportById, ReportId = 1

@@ -2074,3 +2074,29 @@ Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
 12:58:45.393 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
 12:59:02.691 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
 13:01:41.769 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+13:25:11.183 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.186 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 9000
+13:25:11.195 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.196 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 19000
+13:25:11.197 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.198 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 24000
+13:25:11.200 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+13:25:11.200 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрос сотрудников с positionId = 1
+13:25:11.200 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+13:25:11.205 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.205 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.206 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.206 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.206 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+13:25:11.207 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.207 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+13:25:11.209 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+13:25:11.210 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+13:25:11.215 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
+13:25:11.218 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:20.923 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:20.925 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 9000
+13:25:20.936 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:20.936 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 19000
+13:25:20.938 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:20.938 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 24000

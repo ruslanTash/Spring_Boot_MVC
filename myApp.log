@@ -2049,3 +2049,28 @@ Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
 18:41:44.321 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
 18:44:58.842 [main] INFO  c.e.weblibrary.service.ReportService - Вызван метод getReportById, ReportId = 1
 18:51:55.482 [main] INFO  c.e.weblibrary.service.ReportService - Вызван метод getReportById, ReportId = 1
+19:18:32.974 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
+19:19:25.088 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
+19:19:46.114 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
+19:21:00.913 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+19:21:00.915 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрос сотрудников с positionId = 1
+19:21:00.916 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+19:21:00.928 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+19:21:00.929 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+19:21:00.929 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+19:21:00.929 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+19:21:00.929 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+19:21:00.931 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+19:21:00.932 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+19:21:00.935 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+19:21:00.937 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+19:21:00.941 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
+19:21:00.943 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+12:54:56.364 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:55:27.052 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:56:30.137 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:57:28.883 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:58:12.509 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:58:45.393 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:59:02.691 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+13:01:41.769 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null

@@ -1075,3 +1075,1028 @@ Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-valid
 18:34:29.141 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 18:34:29.143 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 18:34:29.146 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:46:59.913 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 5052 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+00:46:59.915 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+00:47:00.324 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:47:00.358 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+00:47:00.647 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:47:00.653 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:47:00.653 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:47:00.653 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+00:47:00.699 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:47:00.699 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 761 ms
+00:47:00.774 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:47:00.880 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6424e613
+00:47:00.881 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:47:00.977 [main] INFO  liquibase.database - Set default schema name to public
+00:47:01.106 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+00:47:01.110 [main] INFO  liquibase.executor - Changelog query completed.
+00:47:01.165 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+00:47:01.206 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+00:47:01.208 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+00:47:01.292 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+00:47:01.376 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+00:47:01.411 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@10408ea
+00:47:01.545 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+00:47:01.927 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:47:01.953 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:47:02.135 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+00:47:02.399 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:47:02.465 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@685e8e17, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@545bc8e1, org.springframework.security.web.context.SecurityContextHolderFilter@15363eba, org.springframework.security.web.header.HeaderWriterFilter@ef09e1, org.springframework.security.web.authentication.logout.LogoutFilter@2cf073da, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3d26c82d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7d2dfe9c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5f3705e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2258ca14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7740028a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8872669, org.springframework.security.web.access.ExceptionTranslationFilter@64b6d6dd, org.springframework.security.web.access.intercept.AuthorizationFilter@74691a1f]
+00:47:02.818 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:47:02.828 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:47:02.834 [main] INFO  c.e.weblibrary.WebLibraryApplication - Started WebLibraryApplication in 3.108 seconds (process running for 3.509)
+01:22:14.327 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+01:22:14.328 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+01:22:14.330 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:32:43.041 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 6288 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+20:32:43.044 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+20:32:43.441 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:32:43.477 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+20:32:43.769 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:32:43.775 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:32:43.776 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:32:43.776 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+20:32:43.822 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:32:43.822 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 755 ms
+20:32:43.901 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:32:44.122 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4168f3d9
+20:32:44.123 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:32:44.220 [main] INFO  liquibase.database - Set default schema name to public
+20:32:44.352 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:32:44.357 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.386 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.387 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.391 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.391 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+20:32:44.421 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.422 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:32:44.422 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.423 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.459 [main] INFO  liquibase.changelog - Table employee created
+20:32:44.460 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 16ms
+20:32:44.462 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.463 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.467 [main] INFO  liquibase.changelog - Table position created
+20:32:44.467 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 4ms
+20:32:44.468 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.473 [main] INFO  liquibase.changelog - Table auth_user created
+20:32:44.474 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 5ms
+20:32:44.475 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.478 [main] INFO  liquibase.changelog - Table roles created
+20:32:44.479 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 4ms
+20:32:44.480 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.480 [main] INFO  liquibase - Update command completed successfully.
+20:32:44.481 [main] INFO  liquibase.executor - Changelog query completed.
+20:32:44.482 [main] INFO  liquibase.lockservice - Successfully released change log lock
+20:32:44.534 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:32:44.583 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+20:32:44.585 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+20:32:44.683 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:32:44.764 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:32:44.796 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@5b1f5fcc
+20:32:44.934 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:32:45.307 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20:32:45.325 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [report]
+20:32:45.327 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [report]
+20:32:45.327 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:32:45.329 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:32:45.330 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:32:45.336 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+20:32:45.344 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [report]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [report]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 16 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [report]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:134)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:75)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:293)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:291)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+20:37:23.324 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 3672 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+20:37:23.326 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+20:37:23.667 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:37:23.698 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+20:37:23.954 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:37:23.959 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:37:23.959 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:37:23.959 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+20:37:23.999 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:37:23.999 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 653 ms
+20:37:24.058 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:37:24.140 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6424e613
+20:37:24.141 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:37:24.211 [main] INFO  liquibase.database - Set default schema name to public
+20:37:24.323 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:37:24.326 [main] INFO  liquibase.executor - Changelog query completed.
+20:37:24.372 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:37:24.399 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+20:37:24.400 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+20:37:24.490 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:37:24.565 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:37:24.591 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@10408ea
+20:37:24.704 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:37:25.040 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20:37:25.058 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [report]
+20:37:25.059 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [report]
+20:37:25.059 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:37:25.061 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:37:25.062 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:37:25.068 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+20:37:25.076 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [report]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [report]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 16 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [report]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:134)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:75)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:293)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:291)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+20:41:54.033 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 8832 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+20:41:54.034 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+20:41:54.372 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:41:54.402 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+20:41:54.645 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:41:54.650 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:41:54.651 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:41:54.651 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+20:41:54.692 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:41:54.693 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 637 ms
+20:41:54.753 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:41:54.835 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a0c5be
+20:41:54.836 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:41:54.906 [main] INFO  liquibase.database - Set default schema name to public
+20:41:55.016 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:41:55.020 [main] INFO  liquibase.executor - Changelog query completed.
+20:41:55.051 [main] INFO  liquibase.executor - Changelog query completed.
+20:41:55.052 [main] INFO  liquibase.executor - Changelog query completed.
+20:41:55.053 [main] INFO  liquibase.executor - Changelog query completed.
+20:41:55.064 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+20:41:55.081 [main] INFO  liquibase.executor - Changelog query completed.
+20:41:55.081 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:41:55.082 [main] INFO  liquibase.executor - Changelog query completed.
+20:41:55.084 [main] INFO  liquibase.executor - Changelog query completed.
+20:41:55.101 [main] INFO  liquibase.changelog - Table report created
+20:41:55.101 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 5ms
+20:41:55.103 [main] INFO  liquibase.executor - Changelog query completed.
+20:41:55.103 [main] INFO  liquibase.executor - Changelog query completed.
+20:41:55.104 [main] INFO  liquibase - Update command completed successfully.
+20:41:55.105 [main] INFO  liquibase.executor - Changelog query completed.
+20:41:55.105 [main] INFO  liquibase.lockservice - Successfully released change log lock
+20:41:55.143 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:41:55.168 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+20:41:55.169 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+20:41:55.238 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:41:55.305 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:41:55.329 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@43ee1cf7
+20:41:55.446 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:41:55.780 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20:41:55.796 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [path_file] in table [report]
+20:41:55.797 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [path_file] in table [report]
+20:41:55.797 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:41:55.799 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:41:55.800 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:41:55.806 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+20:41:55.814 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [path_file] in table [report]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [path_file] in table [report]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 16 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [path_file] in table [report]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:145)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:75)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:293)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:291)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+20:42:48.713 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 2756 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+20:42:48.715 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+20:42:49.049 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:42:49.079 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+20:42:49.325 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:42:49.329 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:42:49.330 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:42:49.330 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+20:42:49.370 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:42:49.370 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 634 ms
+20:42:49.429 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:42:49.511 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c950b3b
+20:42:49.512 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:42:49.581 [main] INFO  liquibase.database - Set default schema name to public
+20:42:49.691 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:42:49.694 [main] INFO  liquibase.executor - Changelog query completed.
+20:42:49.705 [main] INFO  liquibase.changelog - Change failed validation!
+20:42:49.718 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Validation Failed:
+     1 changesets check sum
+          liquibase/changesets/create_report.yml::1::developer was: 8:a76afa9f7169e1365ecd1459499e114c but is now: 8:53003f5b14afcdf8eac9174b07ba4e2f
+
+20:42:49.718 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:42:49.832 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:42:49.834 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:42:49.840 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+20:42:49.848 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Validation Failed:
+     1 changesets check sum
+          liquibase/changesets/create_report.yml::1::developer was: 8:a76afa9f7169e1365ecd1459499e114c but is now: 8:53003f5b14afcdf8eac9174b07ba4e2f
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          liquibase/changesets/create_report.yml::1::developer was: 8:a76afa9f7169e1365ecd1459499e114c but is now: 8:53003f5b14afcdf8eac9174b07ba4e2f
+
+	at liquibase.changelog.DatabaseChangeLog.validate(DatabaseChangeLog.java:357)
+	at liquibase.Liquibase$16.run(Liquibase.java:2296)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2639)
+	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:2286)
+	at liquibase.Liquibase.isUpToDateFastCheck(Liquibase.java:506)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:237)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2639)
+	at liquibase.Liquibase.update(Liquibase.java:236)
+	at liquibase.Liquibase.update(Liquibase.java:221)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:329)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:284)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 18 common frames omitted
+20:43:52.882 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 1452 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+20:43:52.884 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+20:43:53.220 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:43:53.251 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+20:43:53.493 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:43:53.497 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:43:53.498 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:43:53.498 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+20:43:53.539 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:43:53.539 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 635 ms
+20:43:53.599 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:43:53.683 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8e99809
+20:43:53.683 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:43:53.753 [main] INFO  liquibase.database - Set default schema name to public
+20:43:53.864 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:43:53.867 [main] INFO  liquibase.executor - Changelog query completed.
+20:43:53.897 [main] INFO  liquibase.executor - Changelog query completed.
+20:43:53.899 [main] INFO  liquibase.executor - Changelog query completed.
+20:43:53.900 [main] INFO  liquibase.executor - Changelog query completed.
+20:43:53.911 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+20:43:53.927 [main] INFO  liquibase.executor - Changelog query completed.
+20:43:53.928 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:43:53.928 [main] INFO  liquibase.executor - Changelog query completed.
+20:43:53.929 [main] INFO  liquibase.executor - Changelog query completed.
+20:43:53.948 [main] ERROR liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer encountered an exception.
+20:43:53.949 [main] INFO  liquibase - Update command encountered an exception.
+20:43:53.950 [main] INFO  liquibase.executor - Changelog query completed.
+20:43:53.950 [main] INFO  liquibase.lockservice - Successfully released change log lock
+20:43:53.951 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.MigrationFailedException: Migration failed for changeset liquibase/changesets/create_report.yml::1::developer:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: отношение "report" уже существует [Failed SQL: (0) CREATE TABLE public.report (report_id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, data VARCHAR(255), CONSTRAINT report_pkey PRIMARY KEY (report_id))]
+20:43:53.952 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:43:53.976 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:43:53.978 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:43:53.984 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+20:43:53.992 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.MigrationFailedException: Migration failed for changeset liquibase/changesets/create_report.yml::1::developer:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: отношение "report" уже существует [Failed SQL: (0) CREATE TABLE public.report (report_id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, data VARCHAR(255), CONSTRAINT report_pkey PRIMARY KEY (report_id))]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset liquibase/changesets/create_report.yml::1::developer:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: отношение "report" уже существует [Failed SQL: (0) CREATE TABLE public.report (report_id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, data VARCHAR(255), CONSTRAINT report_pkey PRIMARY KEY (report_id))]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:136)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:297)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Scope.child(Scope.java:256)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:295)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2639)
+	at liquibase.Liquibase.update(Liquibase.java:236)
+	at liquibase.Liquibase.update(Liquibase.java:221)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:329)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:284)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 18 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset liquibase/changesets/create_report.yml::1::developer:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: отношение "report" уже существует [Failed SQL: (0) CREATE TABLE public.report (report_id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, data VARCHAR(255), CONSTRAINT report_pkey PRIMARY KEY (report_id))]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:744)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:59)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:124)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:124)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Scope.child(Scope.java:256)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:105)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Scope.child(Scope.java:256)
+	at liquibase.Scope.child(Scope.java:260)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:75)
+	... 36 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: отношение "report" уже существует [Failed SQL: (0) CREATE TABLE public.report (report_id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, data VARCHAR(255), CONSTRAINT report_pkey PRIMARY KEY (report_id))]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:445)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:77)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:160)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1270)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1252)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:702)
+	... 56 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: отношение "report" уже существует
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:441)
+	... 61 common frames omitted
+20:44:37.323 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 5080 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+20:44:37.325 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+20:44:37.665 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:44:37.696 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+20:44:37.946 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:44:37.951 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:44:37.951 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:44:37.951 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+20:44:37.992 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:44:37.992 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 647 ms
+20:44:38.055 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:44:38.140 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6424e613
+20:44:38.141 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:44:38.214 [main] INFO  liquibase.database - Set default schema name to public
+20:44:38.326 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:44:38.329 [main] INFO  liquibase.executor - Changelog query completed.
+20:44:38.359 [main] INFO  liquibase.executor - Changelog query completed.
+20:44:38.360 [main] INFO  liquibase.executor - Changelog query completed.
+20:44:38.362 [main] INFO  liquibase.executor - Changelog query completed.
+20:44:38.363 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+20:44:38.379 [main] INFO  liquibase.executor - Changelog query completed.
+20:44:38.380 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:44:38.381 [main] INFO  liquibase.executor - Changelog query completed.
+20:44:38.382 [main] INFO  liquibase.executor - Changelog query completed.
+20:44:38.398 [main] ERROR liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer encountered an exception.
+20:44:38.398 [main] INFO  liquibase - Update command encountered an exception.
+20:44:38.399 [main] INFO  liquibase.executor - Changelog query completed.
+20:44:38.400 [main] INFO  liquibase.lockservice - Successfully released change log lock
+20:44:38.401 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.MigrationFailedException: Migration failed for changeset liquibase/changesets/create_report.yml::1::developer:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: отношение "report" уже существует [Failed SQL: (0) CREATE TABLE public.report (report_id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, data VARCHAR(255), CONSTRAINT report_pkey PRIMARY KEY (report_id))]
+20:44:38.401 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:44:38.446 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:44:38.447 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:44:38.453 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+20:44:38.461 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.MigrationFailedException: Migration failed for changeset liquibase/changesets/create_report.yml::1::developer:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: отношение "report" уже существует [Failed SQL: (0) CREATE TABLE public.report (report_id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, data VARCHAR(255), CONSTRAINT report_pkey PRIMARY KEY (report_id))]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset liquibase/changesets/create_report.yml::1::developer:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: отношение "report" уже существует [Failed SQL: (0) CREATE TABLE public.report (report_id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, data VARCHAR(255), CONSTRAINT report_pkey PRIMARY KEY (report_id))]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:136)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:297)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Scope.child(Scope.java:256)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:295)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2639)
+	at liquibase.Liquibase.update(Liquibase.java:236)
+	at liquibase.Liquibase.update(Liquibase.java:221)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:329)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:284)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 18 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset liquibase/changesets/create_report.yml::1::developer:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: отношение "report" уже существует [Failed SQL: (0) CREATE TABLE public.report (report_id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, data VARCHAR(255), CONSTRAINT report_pkey PRIMARY KEY (report_id))]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:744)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:59)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:124)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:124)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Scope.child(Scope.java:256)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:105)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Scope.child(Scope.java:256)
+	at liquibase.Scope.child(Scope.java:260)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:75)
+	... 36 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: отношение "report" уже существует [Failed SQL: (0) CREATE TABLE public.report (report_id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, data VARCHAR(255), CONSTRAINT report_pkey PRIMARY KEY (report_id))]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:445)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:77)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:160)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1270)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1252)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:702)
+	... 56 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: отношение "report" уже существует
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:333)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:319)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:295)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:290)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:441)
+	... 61 common frames omitted
+20:46:05.062 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 280 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+20:46:05.064 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+20:46:05.398 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:46:05.429 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+20:46:05.673 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:46:05.678 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:46:05.678 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:46:05.678 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+20:46:05.720 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:46:05.720 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 636 ms
+20:46:05.780 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:46:05.864 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e62319f
+20:46:05.865 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:46:05.934 [main] INFO  liquibase.database - Set default schema name to public
+20:46:06.046 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:46:06.050 [main] INFO  liquibase.executor - Changelog query completed.
+20:46:06.081 [main] INFO  liquibase.executor - Changelog query completed.
+20:46:06.082 [main] INFO  liquibase.executor - Changelog query completed.
+20:46:06.084 [main] INFO  liquibase.executor - Changelog query completed.
+20:46:06.096 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+20:46:06.113 [main] INFO  liquibase.executor - Changelog query completed.
+20:46:06.113 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:46:06.114 [main] INFO  liquibase.executor - Changelog query completed.
+20:46:06.115 [main] INFO  liquibase.executor - Changelog query completed.
+20:46:06.130 [main] INFO  liquibase.changelog - Table report created
+20:46:06.131 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 5ms
+20:46:06.132 [main] INFO  liquibase.executor - Changelog query completed.
+20:46:06.133 [main] INFO  liquibase.executor - Changelog query completed.
+20:46:06.133 [main] INFO  liquibase - Update command completed successfully.
+20:46:06.134 [main] INFO  liquibase.executor - Changelog query completed.
+20:46:06.135 [main] INFO  liquibase.lockservice - Successfully released change log lock
+20:46:06.173 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:46:06.199 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+20:46:06.200 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+20:46:06.269 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:46:06.340 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:46:06.366 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@79135a38
+20:46:06.476 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:46:06.808 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20:46:06.824 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [path_file] in table [report]
+20:46:06.825 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [path_file] in table [report]
+20:46:06.825 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:46:06.827 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:46:06.828 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:46:06.834 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+20:46:06.842 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [path_file] in table [report]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [path_file] in table [report]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 16 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [path_file] in table [report]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:145)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:75)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:293)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:291)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+20:47:11.888 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 5976 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+20:47:11.890 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+20:47:12.223 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:47:12.253 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+20:47:12.498 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:47:12.502 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:47:12.503 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:47:12.503 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+20:47:12.543 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:47:12.544 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 632 ms
+20:47:12.604 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:47:12.688 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6424e613
+20:47:12.689 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:47:12.757 [main] INFO  liquibase.database - Set default schema name to public
+20:47:12.873 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:47:12.876 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:12.888 [main] INFO  liquibase.changelog - Change failed validation!
+20:47:12.889 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Validation Failed:
+     1 changesets check sum
+          liquibase/changesets/create_report.yml::1::developer was: 8:53003f5b14afcdf8eac9174b07ba4e2f but is now: 8:163eba2343830e61357c42aea66c442c
+
+20:47:12.889 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:47:12.900 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:47:12.902 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:47:12.907 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+20:47:12.915 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Validation Failed:
+     1 changesets check sum
+          liquibase/changesets/create_report.yml::1::developer was: 8:53003f5b14afcdf8eac9174b07ba4e2f but is now: 8:163eba2343830e61357c42aea66c442c
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          liquibase/changesets/create_report.yml::1::developer was: 8:53003f5b14afcdf8eac9174b07ba4e2f but is now: 8:163eba2343830e61357c42aea66c442c
+
+	at liquibase.changelog.DatabaseChangeLog.validate(DatabaseChangeLog.java:357)
+	at liquibase.Liquibase$16.run(Liquibase.java:2296)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2639)
+	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:2286)
+	at liquibase.Liquibase.isUpToDateFastCheck(Liquibase.java:506)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:237)
+	at liquibase.Scope.lambda$child$0(Scope.java:187)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:186)
+	at liquibase.Scope.child(Scope.java:165)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2639)
+	at liquibase.Liquibase.update(Liquibase.java:236)
+	at liquibase.Liquibase.update(Liquibase.java:221)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:329)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:284)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 18 common frames omitted
+20:47:46.205 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 17.0.7 with PID 7008 (C:\Users\Ruslan\IdeaProjects\web-library\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+20:47:46.207 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+20:47:46.542 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:47:46.572 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 4 JPA repository interfaces.
+20:47:46.815 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:47:46.819 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:47:46.820 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:47:46.820 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+20:47:46.860 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:47:46.861 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 632 ms
+20:47:46.921 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:47:47.005 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6424e613
+20:47:47.006 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:47:47.076 [main] INFO  liquibase.database - Set default schema name to public
+20:47:47.190 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:47:47.194 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.225 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.226 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.228 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.239 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+20:47:47.256 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.257 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+20:47:47.257 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.258 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.273 [main] INFO  liquibase.changelog - Table report created
+20:47:47.273 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 5ms
+20:47:47.274 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.275 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.275 [main] INFO  liquibase - Update command completed successfully.
+20:47:47.276 [main] INFO  liquibase.executor - Changelog query completed.
+20:47:47.276 [main] INFO  liquibase.lockservice - Successfully released change log lock
+20:47:47.313 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:47:47.338 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+20:47:47.339 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+20:47:47.406 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:47:47.478 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:47:47.503 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@24954e82
+20:47:47.620 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+20:47:47.945 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+20:47:47.960 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:47:48.156 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+20:47:48.412 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:47:48.477 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@711cd6f9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cb3de26, org.springframework.security.web.context.SecurityContextHolderFilter@2d260f2a, org.springframework.security.web.header.HeaderWriterFilter@1e295ef1, org.springframework.security.web.authentication.logout.LogoutFilter@db5e88a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26c9225a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5941a2ad, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7307e418, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b8502e7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48531d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30d5668a, org.springframework.security.web.access.ExceptionTranslationFilter@3f27a95b, org.springframework.security.web.access.intercept.AuthorizationFilter@71639428]
+20:47:48.839 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:47:48.851 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:47:48.856 [main] INFO  c.e.weblibrary.WebLibraryApplication - Started WebLibraryApplication in 2.811 seconds (process running for 3.126)
+20:48:14.824 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:48:14.824 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:48:14.825 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+20:48:34.150 [http-nio-8080-exec-5] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+20:48:48.080 [http-nio-8080-exec-9] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+20:49:29.927 [http-nio-8080-exec-3] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 118 ms
+20:51:05.945 [http-nio-8080-exec-6] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = 1
+21:20:19.233 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:20:19.234 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:20:19.236 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:05:05.506 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:09:29.205 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:18:14.194 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:18:14.198 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:18:48.652 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:18:48.656 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:19:18.529 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:19:18.533 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:19:47.410 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:19:47.413 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:22:33.003 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:23:10.635 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:23:10.639 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:23:25.177 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:23:25.181 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:25:43.820 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:25:43.825 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:34:29.015 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:34:29.017 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:34:29.018 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:34:29.018 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:34:29.018 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:35:44.505 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:35:44.507 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:35:44.508 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:35:44.508 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:35:44.508 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:36:34.127 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:34.130 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:34.130 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:34.130 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:34.131 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:36:56.451 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:56.454 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:56.454 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:56.454 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:36:56.454 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:37:21.767 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:21.770 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:21.770 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:21.771 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:21.771 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:37:33.562 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:33.566 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+16:37:33.571 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:33.572 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:33.572 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:33.572 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:37:33.573 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+16:37:33.579 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:41:59.318 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1 не найден
+16:42:41.095 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:42:41.099 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:43:29.299 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:44:25.178 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:44:45.163 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:45:25.368 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:45:25.372 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:45:30.775 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:46:21.320 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:46:23.537 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+16:46:23.540 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:54:18.385 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:55:53.446 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:56:24.921 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:56:38.563 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+16:57:16.365 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+17:02:29.883 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:02:35.810 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:02:35.813 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+17:09:59.770 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:10:16.872 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:10:16.875 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 0 не найден
+17:33:07.133 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:33:07.137 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 1удалён
+17:50:29.712 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:50:29.715 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+17:50:46.723 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:50:46.725 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+17:50:59.344 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:50:59.346 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+17:51:14.866 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:51:14.869 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+17:55:28.120 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:28.122 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:28.123 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:28.123 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:28.123 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+17:55:39.539 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:39.542 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:39.542 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:39.543 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+17:55:39.543 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+18:09:34.134 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:09:34.136 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрос сотрудников с positionId = 1
+18:09:34.137 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:12:44.612 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+18:13:10.580 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+18:13:24.811 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 3
+18:13:58.096 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 3
+18:14:30.730 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 2
+18:14:55.738 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+18:22:58.680 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:35:56.931 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.945 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:36:11.947 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрос сотрудников с positionId = 1
+18:36:11.948 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:36:11.959 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.960 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.961 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.961 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.961 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+18:36:11.963 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:36:11.963 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+18:36:11.966 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+18:36:11.968 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:36:40.865 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+18:41:44.321 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:44:58.842 [main] INFO  c.e.weblibrary.service.ReportService - Вызван метод getReportById, ReportId = 1
+18:51:55.482 [main] INFO  c.e.weblibrary.service.ReportService - Вызван метод getReportById, ReportId = 1
+19:18:32.974 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
+19:19:25.088 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
+19:19:46.114 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
+19:21:00.913 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+19:21:00.915 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрос сотрудников с positionId = 1
+19:21:00.916 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+19:21:00.928 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+19:21:00.929 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+19:21:00.929 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+19:21:00.929 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+19:21:00.929 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+19:21:00.931 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+19:21:00.932 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+19:21:00.935 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+19:21:00.937 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+19:21:00.941 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
+19:21:00.943 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+12:54:56.364 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:55:27.052 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:56:30.137 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:57:28.883 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:58:12.509 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:58:45.393 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:59:02.691 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+13:01:41.769 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+13:25:11.183 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.186 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 9000
+13:25:11.195 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.196 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 19000
+13:25:11.197 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.198 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 24000
+13:25:11.200 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+13:25:11.200 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрос сотрудников с positionId = 1
+13:25:11.200 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+13:25:11.205 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.205 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.206 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.206 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.206 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
+13:25:11.207 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:11.207 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
+13:25:11.209 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошена fullInfo сотрудника id = 1
+13:25:11.210 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllFullEmployees()
+13:25:11.215 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
+13:25:11.218 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:20.923 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:20.925 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 9000
+13:25:20.936 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:20.936 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 19000
+13:25:20.938 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+13:25:20.938 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 24000

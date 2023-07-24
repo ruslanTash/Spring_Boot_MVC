@@ -7,3 +7,5 @@ databaseChangeLog:
       file: liquibase/changesets/create_auth_user.yml
   - include:
      file: liquibase/changesets/create_role.yml
+  - include:
+      file: liquibase/changesets/create_report.yml

@@ -23,6 +23,7 @@ public class Report implements Serializable {
     @Transient
     private String data;
 
+    @Column(name = "path_file")
     private String pathFile;
 
     public Report(String data) {

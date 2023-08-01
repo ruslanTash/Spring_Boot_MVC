@@ -48,6 +48,15 @@ public class EmployeeTest {
                 .andExpect(jsonPath("$[0].name").value("Последний"));
     }
 
+    @Test
+    @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
+    void whenNotFound_getStatus404() throws Exception {
+        mockMvc.perform(get("/employees/{id}", 10))
+                .andExpect(status().isNotFound());
+        mockMvc.perform(get("/employees/{id}/fullInfo", 10))
+                .andExpect(status().isNotFound());
+    }
+
     void createEmployees() {
         List<Employee> employeeList = List.of(
                 new Employee(1, "Первый", 10000, new Position(1, "Позишен №1")),

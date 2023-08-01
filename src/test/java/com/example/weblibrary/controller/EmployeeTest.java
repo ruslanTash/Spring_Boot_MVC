@@ -48,6 +48,19 @@ public class EmployeeTest {
                 .andExpect(jsonPath("$").isEmpty());
     }
 
+    @Test
+    @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
+    void getEmployeesTest() throws Exception {
+        createEmployees();
+        mockMvc.perform(get("/admin/employees/all"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$").isArray())
+                .andExpect(jsonPath("$.length()").value(1))
+                .andExpect(jsonPath("$[0].name").value("Первый"))
+                .andExpect(jsonPath("$[1].name").value("Второй"))
+                .andExpect(jsonPath("$[2].name").value("Последний"));
+
+    }
 
 
 

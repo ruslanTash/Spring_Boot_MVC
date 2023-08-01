@@ -7,15 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("GET")
+@RequestMapping("/appInfo")
 public class InfoController {
 
-    @GetMapping("appInfo")
-    public String appInfo() {
-        return app;
-
-    }
     @Value("${app.env}")
-    private String app;
+    private String name;
 
+    @GetMapping("/")
+    public String getAppInfo() {
+        return name;
+    }
 }

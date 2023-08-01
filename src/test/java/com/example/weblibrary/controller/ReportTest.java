@@ -37,7 +37,7 @@ public class ReportTest {
     private ReportService reportService;
 
     @Test
-    @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
+    @WithMockUser(username = "admin", roles = "USER", password = "1234")
     void getReport() throws Exception {
         createEmployees();
         mockMvc.perform(post("/report"))
@@ -46,7 +46,7 @@ public class ReportTest {
     }
 
     @Test
-    @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
+    @WithMockUser(username = "admin", roles = "USER", password = "1234")
     void getReportById() throws Exception {
         Integer id = reportService.createReports();
         mockMvc.perform(get("/report/{id}", id))

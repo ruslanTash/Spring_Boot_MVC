@@ -21,11 +21,11 @@ public class InfoTest {
     MockMvc mockMvc;
 
     @Test
-    @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
+    @WithMockUser(username = "admin", roles = "USER", password = "1234")
     void getAppInfo() throws Exception {
         mockMvc.perform(get("/appInfo/"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$").value("dev"));
+                .andExpect(jsonPath("$").value("test"));
     }
 }
 

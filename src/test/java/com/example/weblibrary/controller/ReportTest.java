@@ -12,6 +12,7 @@ import com.example.weblibrary.service.ReportService;
 import com.example.weblibrary.model.Position;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.annotation.DirtiesContext;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +37,7 @@ public class ReportTest {
     private ReportService reportService;
 
     @Test
-
+    @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
     void getReport() throws Exception {
         createEmployees();
         mockMvc.perform(post("/report"))
@@ -45,7 +46,7 @@ public class ReportTest {
     }
 
     @Test
-
+    @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
     void getReportById() throws Exception {
         Integer id = reportService.createReports();
         mockMvc.perform(get("/report/{id}", id))

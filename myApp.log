@@ -2995,3 +2995,592 @@ Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
 23:37:08.882 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 23:37:08.883 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 23:37:08.884 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:38:38.528 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.employee.ReportTest]: ReportTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:38:38.592 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.employee.ReportTest
+23:38:38.794 [main] INFO  c.e.weblibrary.employee.ReportTest - Starting ReportTest using Java 17.0.7 with PID 8604 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:38:38.794 [main] INFO  c.e.weblibrary.employee.ReportTest - No active profile set, falling back to 1 default profile: "default"
+23:38:39.133 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:38:39.165 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+23:38:39.398 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:38:39.507 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+23:38:39.509 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:38:39.545 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+23:38:39.792 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.794 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.797 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.798 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.801 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.802 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+23:38:39.810 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+23:38:39.812 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.812 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+23:38:39.814 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.814 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.844 [main] INFO  liquibase.changelog - Table employee created
+23:38:39.844 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 4ms
+23:38:39.846 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.847 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.849 [main] INFO  liquibase.changelog - Table position created
+23:38:39.849 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 1ms
+23:38:39.850 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.852 [main] INFO  liquibase.changelog - Table auth_user created
+23:38:39.852 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 2ms
+23:38:39.853 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.854 [main] INFO  liquibase.changelog - Table roles created
+23:38:39.855 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 2ms
+23:38:39.855 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.857 [main] INFO  liquibase.changelog - Table report created
+23:38:39.857 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
+23:38:39.858 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.859 [main] INFO  liquibase - Update command completed successfully.
+23:38:39.860 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:39.860 [main] INFO  liquibase.lockservice - Successfully released change log lock
+23:38:39.903 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:38:39.932 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+23:38:39.934 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+23:38:40.014 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:38:40.097 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:38:40.129 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+23:38:40.251 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:38:40.600 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:38:40.601 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:38:40.754 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+23:38:41.086 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:38:41.285 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:38:41.285 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:38:41.287 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+23:38:41.303 [main] INFO  c.e.weblibrary.employee.ReportTest - Started ReportTest in 2.624 seconds (process running for 3.212)
+23:38:41.699 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = 1
+23:38:41.728 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:38:41.730 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:38:41.731 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:38:51.228 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.employee.ReportTest]: ReportTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:38:51.298 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.employee.ReportTest
+23:38:51.500 [main] INFO  c.e.weblibrary.employee.ReportTest - Starting ReportTest using Java 17.0.7 with PID 8096 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:38:51.501 [main] INFO  c.e.weblibrary.employee.ReportTest - No active profile set, falling back to 1 default profile: "default"
+23:38:51.830 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:38:51.867 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+23:38:52.111 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:38:52.236 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+23:38:52.237 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:38:52.279 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+23:38:52.522 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.524 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.528 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.530 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.533 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.534 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+23:38:52.542 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+23:38:52.545 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.545 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+23:38:52.547 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.547 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.581 [main] INFO  liquibase.changelog - Table employee created
+23:38:52.581 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 5ms
+23:38:52.583 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.584 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.586 [main] INFO  liquibase.changelog - Table position created
+23:38:52.586 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 2ms
+23:38:52.587 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.587 [main] INFO  liquibase.changelog - Table auth_user created
+23:38:52.588 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 0ms
+23:38:52.588 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.590 [main] INFO  liquibase.changelog - Table roles created
+23:38:52.590 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
+23:38:52.591 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.593 [main] INFO  liquibase.changelog - Table report created
+23:38:52.593 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 2ms
+23:38:52.593 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.594 [main] INFO  liquibase - Update command completed successfully.
+23:38:52.595 [main] INFO  liquibase.executor - Changelog query completed.
+23:38:52.595 [main] INFO  liquibase.lockservice - Successfully released change log lock
+23:38:52.637 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:38:52.665 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+23:38:52.666 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+23:38:52.744 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:38:52.826 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:38:52.852 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+23:38:52.962 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:38:53.300 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:38:53.302 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:38:53.457 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+23:38:53.796 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:38:53.992 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:38:53.993 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:38:53.994 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+23:38:54.011 [main] INFO  c.e.weblibrary.employee.ReportTest - Started ReportTest in 2.626 seconds (process running for 3.214)
+23:38:54.412 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = 1
+23:38:54.439 [main] INFO  c.e.weblibrary.service.ReportService - Вызван метод getReportById, ReportId = 1
+23:38:54.458 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:38:54.459 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:38:54.461 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:45:46.555 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.employee.ReportTest]: ReportTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:45:46.623 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.employee.ReportTest
+23:45:46.836 [main] INFO  c.e.weblibrary.employee.ReportTest - Starting ReportTest using Java 17.0.7 with PID 7068 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:45:46.836 [main] INFO  c.e.weblibrary.employee.ReportTest - No active profile set, falling back to 1 default profile: "default"
+23:45:47.165 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:45:47.201 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+23:45:47.447 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:45:47.558 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+23:45:47.559 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:45:47.595 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+23:45:47.836 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.838 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.841 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.843 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.848 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.848 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+23:45:47.856 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+23:45:47.858 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.858 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+23:45:47.860 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.860 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.893 [main] INFO  liquibase.changelog - Table employee created
+23:45:47.894 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 5ms
+23:45:47.896 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.897 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.899 [main] INFO  liquibase.changelog - Table position created
+23:45:47.899 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 2ms
+23:45:47.900 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.902 [main] INFO  liquibase.changelog - Table auth_user created
+23:45:47.902 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 2ms
+23:45:47.903 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.904 [main] INFO  liquibase.changelog - Table roles created
+23:45:47.905 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
+23:45:47.905 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.907 [main] INFO  liquibase.changelog - Table report created
+23:45:47.907 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
+23:45:47.908 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.908 [main] INFO  liquibase - Update command completed successfully.
+23:45:47.909 [main] INFO  liquibase.executor - Changelog query completed.
+23:45:47.910 [main] INFO  liquibase.lockservice - Successfully released change log lock
+23:45:47.954 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:45:47.983 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+23:45:47.984 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+23:45:48.060 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:45:48.142 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:45:48.169 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+23:45:48.285 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:45:48.629 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:45:48.630 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:45:48.779 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+23:45:49.120 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:45:49.314 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:45:49.314 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:45:49.316 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+23:45:49.332 [main] INFO  c.e.weblibrary.employee.ReportTest - Started ReportTest in 2.608 seconds (process running for 3.208)
+23:45:49.633 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 90036, SQLState: 90036
+23:45:49.633 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Последовательность "EMPLOYEE_SEQ" не найдена
+Sequence "EMPLOYEE_SEQ" not found; SQL statement:
+select next value for employee_seq [90036-214]
+23:45:49.649 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:45:49.650 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:45:49.651 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:46:33.224 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.employee.ReportTest]: ReportTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:46:33.301 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.employee.ReportTest
+23:46:33.504 [main] INFO  c.e.weblibrary.employee.ReportTest - Starting ReportTest using Java 17.0.7 with PID 6324 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:46:33.504 [main] INFO  c.e.weblibrary.employee.ReportTest - No active profile set, falling back to 1 default profile: "default"
+23:46:33.824 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:46:33.862 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+23:46:34.095 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:46:34.202 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+23:46:34.203 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:46:34.238 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+23:46:34.485 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.487 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.490 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.491 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.494 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.494 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+23:46:34.502 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+23:46:34.505 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.505 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+23:46:34.506 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.507 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.536 [main] INFO  liquibase.changelog - Table employee created
+23:46:34.536 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 4ms
+23:46:34.538 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.539 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.541 [main] INFO  liquibase.changelog - Table position created
+23:46:34.541 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 1ms
+23:46:34.542 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.544 [main] INFO  liquibase.changelog - Table auth_user created
+23:46:34.544 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 2ms
+23:46:34.545 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.546 [main] INFO  liquibase.changelog - Table roles created
+23:46:34.547 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 2ms
+23:46:34.547 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.549 [main] INFO  liquibase.changelog - Table report created
+23:46:34.549 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
+23:46:34.550 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.550 [main] INFO  liquibase - Update command completed successfully.
+23:46:34.551 [main] INFO  liquibase.executor - Changelog query completed.
+23:46:34.551 [main] INFO  liquibase.lockservice - Successfully released change log lock
+23:46:34.594 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:46:34.623 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+23:46:34.624 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+23:46:34.703 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:46:34.786 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:46:34.820 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+23:46:34.943 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:46:35.288 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:46:35.290 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:46:35.443 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+23:46:35.758 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:46:35.973 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:46:35.973 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:46:35.975 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+23:46:35.991 [main] INFO  c.e.weblibrary.employee.ReportTest - Started ReportTest in 2.598 seconds (process running for 3.2)
+23:46:36.371 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:46:36.372 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:46:36.373 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:47:32.745 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.employee.ReportTest]: ReportTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:47:32.814 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.employee.ReportTest
+23:47:33.014 [main] INFO  c.e.weblibrary.employee.ReportTest - Starting ReportTest using Java 17.0.7 with PID 8272 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:47:33.014 [main] INFO  c.e.weblibrary.employee.ReportTest - No active profile set, falling back to 1 default profile: "default"
+23:47:33.348 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:47:33.383 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+23:47:33.626 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:47:33.739 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+23:47:33.743 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:47:33.778 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+23:47:34.013 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.015 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.019 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.021 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.024 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.024 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+23:47:34.033 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+23:47:34.035 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.035 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+23:47:34.037 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.038 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.074 [main] INFO  liquibase.changelog - Table employee created
+23:47:34.075 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 6ms
+23:47:34.077 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.078 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.080 [main] INFO  liquibase.changelog - Table position created
+23:47:34.081 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 1ms
+23:47:34.081 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.083 [main] INFO  liquibase.changelog - Table auth_user created
+23:47:34.084 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 1ms
+23:47:34.084 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.086 [main] INFO  liquibase.changelog - Table roles created
+23:47:34.086 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
+23:47:34.087 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.088 [main] INFO  liquibase.changelog - Table report created
+23:47:34.089 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 2ms
+23:47:34.089 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.090 [main] INFO  liquibase - Update command completed successfully.
+23:47:34.091 [main] INFO  liquibase.executor - Changelog query completed.
+23:47:34.091 [main] INFO  liquibase.lockservice - Successfully released change log lock
+23:47:34.131 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:47:34.160 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+23:47:34.161 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+23:47:34.235 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:47:34.314 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:47:34.341 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+23:47:34.458 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:47:34.788 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:47:34.790 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:47:34.945 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+23:47:35.284 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:47:35.480 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:47:35.480 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:47:35.481 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+23:47:35.498 [main] INFO  c.e.weblibrary.employee.ReportTest - Started ReportTest in 2.597 seconds (process running for 3.197)
+23:47:35.889 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = 1
+23:47:35.927 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:47:35.929 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:47:35.930 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:48:04.156 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.employee.ReportTest]: ReportTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:48:04.228 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.employee.ReportTest
+23:48:04.429 [main] INFO  c.e.weblibrary.employee.ReportTest - Starting ReportTest using Java 17.0.7 with PID 8636 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:48:04.430 [main] INFO  c.e.weblibrary.employee.ReportTest - No active profile set, falling back to 1 default profile: "default"
+23:48:04.763 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:48:04.799 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+23:48:05.032 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:48:05.149 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+23:48:05.150 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:48:05.185 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+23:48:05.421 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.423 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.425 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.427 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.430 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.431 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+23:48:05.439 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+23:48:05.441 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.441 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+23:48:05.443 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.443 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.478 [main] INFO  liquibase.changelog - Table employee created
+23:48:05.478 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 6ms
+23:48:05.481 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.482 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.484 [main] INFO  liquibase.changelog - Table position created
+23:48:05.484 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 2ms
+23:48:05.485 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.487 [main] INFO  liquibase.changelog - Table auth_user created
+23:48:05.487 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 2ms
+23:48:05.488 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.490 [main] INFO  liquibase.changelog - Table roles created
+23:48:05.490 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 2ms
+23:48:05.491 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.493 [main] INFO  liquibase.changelog - Table report created
+23:48:05.493 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 2ms
+23:48:05.493 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.494 [main] INFO  liquibase - Update command completed successfully.
+23:48:05.495 [main] INFO  liquibase.executor - Changelog query completed.
+23:48:05.495 [main] INFO  liquibase.lockservice - Successfully released change log lock
+23:48:05.539 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:48:05.566 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+23:48:05.568 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+23:48:05.646 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:48:05.733 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:48:05.763 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+23:48:05.884 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:48:06.225 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:48:06.227 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:48:06.378 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+23:48:06.730 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:48:06.919 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:48:06.919 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:48:06.921 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+23:48:06.937 [main] INFO  c.e.weblibrary.employee.ReportTest - Started ReportTest in 2.621 seconds (process running for 3.209)
+23:48:07.337 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = 1
+23:48:07.369 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:48:07.370 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:48:07.371 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:50:42.707 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.controller.ReportTest]: ReportTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:50:42.787 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.controller.ReportTest
+23:50:42.979 [main] INFO  c.e.weblibrary.controller.ReportTest - Starting ReportTest using Java 17.0.7 with PID 9056 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:50:42.980 [main] INFO  c.e.weblibrary.controller.ReportTest - No active profile set, falling back to 1 default profile: "default"
+23:50:43.384 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:50:43.423 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 4 JPA repository interfaces.
+23:50:43.680 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:50:43.802 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+23:50:43.803 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:50:43.842 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+23:50:44.079 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.081 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.083 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.087 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.090 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.090 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+23:50:44.098 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+23:50:44.100 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.101 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+23:50:44.102 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.103 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.132 [main] INFO  liquibase.changelog - Table employee created
+23:50:44.132 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 5ms
+23:50:44.134 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.135 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.137 [main] INFO  liquibase.changelog - Table position created
+23:50:44.137 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 2ms
+23:50:44.138 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.140 [main] INFO  liquibase.changelog - Table auth_user created
+23:50:44.140 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 2ms
+23:50:44.141 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.142 [main] INFO  liquibase.changelog - Table roles created
+23:50:44.143 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
+23:50:44.143 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.145 [main] INFO  liquibase.changelog - Table report created
+23:50:44.145 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 2ms
+23:50:44.146 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.146 [main] INFO  liquibase - Update command completed successfully.
+23:50:44.147 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:44.147 [main] INFO  liquibase.lockservice - Successfully released change log lock
+23:50:44.200 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:50:44.232 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+23:50:44.233 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+23:50:44.321 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:50:44.396 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:50:44.427 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+23:50:44.560 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:50:44.930 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:50:44.932 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:50:45.143 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+23:50:45.481 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:50:45.565 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2bf83b29, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25a2702c, org.springframework.security.web.context.SecurityContextHolderFilter@6a4ec62d, org.springframework.security.web.header.HeaderWriterFilter@204bd52d, org.springframework.security.web.authentication.logout.LogoutFilter@2495a351, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1fb320de, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3a07afe6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@23110196, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c902a72, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@294ffc88, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@328446e1, org.springframework.security.web.access.ExceptionTranslationFilter@58965e17, org.springframework.security.web.access.intercept.AuthorizationFilter@12039ae0]
+23:50:46.170 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:50:46.170 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:50:46.171 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+23:50:46.188 [main] INFO  c.e.weblibrary.controller.ReportTest - Started ReportTest in 3.321 seconds (process running for 3.901)
+23:50:46.505 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 90036, SQLState: 90036
+23:50:46.505 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Последовательность "EMPLOYEE_SEQ" не найдена
+Sequence "EMPLOYEE_SEQ" not found; SQL statement:
+select next value for employee_seq [90036-214]
+23:50:46.518 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:50:46.519 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:50:46.521 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:50:46.542 [main] INFO  c.e.weblibrary.controller.ReportTest - Starting ReportTest using Java 17.0.7 with PID 9056 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:50:46.542 [main] INFO  c.e.weblibrary.controller.ReportTest - No active profile set, falling back to 1 default profile: "default"
+23:50:46.660 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:50:46.667 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 4 JPA repository interfaces.
+23:50:46.702 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+23:50:46.703 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:test user=SA
+23:50:46.704 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+23:50:46.704 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+23:50:46.718 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.718 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.719 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.719 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.720 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.720 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+23:50:46.721 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+23:50:46.722 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.723 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+23:50:46.723 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.723 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.730 [main] INFO  liquibase.changelog - Table employee created
+23:50:46.730 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 1ms
+23:50:46.731 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.732 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.733 [main] INFO  liquibase.changelog - Table position created
+23:50:46.733 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 1ms
+23:50:46.734 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.735 [main] INFO  liquibase.changelog - Table auth_user created
+23:50:46.736 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 2ms
+23:50:46.736 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.738 [main] INFO  liquibase.changelog - Table roles created
+23:50:46.738 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
+23:50:46.738 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.740 [main] INFO  liquibase.changelog - Table report created
+23:50:46.740 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
+23:50:46.741 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.741 [main] INFO  liquibase - Update command completed successfully.
+23:50:46.741 [main] INFO  liquibase.executor - Changelog query completed.
+23:50:46.741 [main] INFO  liquibase.lockservice - Successfully released change log lock
+23:50:46.752 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:50:46.754 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:50:46.755 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:50:46.755 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+23:50:46.762 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:50:46.787 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:50:46.787 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:50:46.834 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:50:46.843 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30081ff4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34dcad0d, org.springframework.security.web.context.SecurityContextHolderFilter@4d37c839, org.springframework.security.web.header.HeaderWriterFilter@1148eca4, org.springframework.security.web.authentication.logout.LogoutFilter@61252eef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7892045f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@a184485, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5ab1b065, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19f03a01, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ce3ae71, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3269e790, org.springframework.security.web.access.ExceptionTranslationFilter@309ea91f, org.springframework.security.web.access.intercept.AuthorizationFilter@6880c06b]
+23:50:47.058 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:50:47.058 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:50:47.058 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+23:50:47.062 [main] INFO  c.e.weblibrary.controller.ReportTest - Started ReportTest in 0.532 seconds (process running for 4.775)
+23:50:47.148 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = 1
+23:50:47.168 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:50:47.168 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+23:50:47.169 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+23:51:07.848 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.controller.ReportTest]: ReportTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:51:07.931 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.controller.ReportTest
+23:51:08.128 [main] INFO  c.e.weblibrary.controller.ReportTest - Starting ReportTest using Java 17.0.7 with PID 5700 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:51:08.128 [main] INFO  c.e.weblibrary.controller.ReportTest - No active profile set, falling back to 1 default profile: "default"
+23:51:08.542 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:51:08.576 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+23:51:08.828 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:51:08.951 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+23:51:08.952 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:51:08.992 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+23:51:09.236 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.237 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.240 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.241 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.244 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.244 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+23:51:09.252 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+23:51:09.254 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.255 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+23:51:09.256 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.256 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.285 [main] INFO  liquibase.changelog - Table employee created
+23:51:09.286 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 4ms
+23:51:09.287 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.288 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.290 [main] INFO  liquibase.changelog - Table position created
+23:51:09.291 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 1ms
+23:51:09.291 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.293 [main] INFO  liquibase.changelog - Table auth_user created
+23:51:09.293 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 1ms
+23:51:09.294 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.296 [main] INFO  liquibase.changelog - Table roles created
+23:51:09.296 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 2ms
+23:51:09.296 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.298 [main] INFO  liquibase.changelog - Table report created
+23:51:09.298 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
+23:51:09.299 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.299 [main] INFO  liquibase - Update command completed successfully.
+23:51:09.300 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:09.300 [main] INFO  liquibase.lockservice - Successfully released change log lock
+23:51:09.353 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:51:09.390 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+23:51:09.391 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+23:51:09.487 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:51:09.568 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:51:09.600 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+23:51:09.748 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:51:10.156 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:51:10.157 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:51:10.363 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+23:51:10.688 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:51:10.768 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2bf83b29, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25a2702c, org.springframework.security.web.context.SecurityContextHolderFilter@6a4ec62d, org.springframework.security.web.header.HeaderWriterFilter@204bd52d, org.springframework.security.web.authentication.logout.LogoutFilter@2495a351, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1fb320de, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3a07afe6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@23110196, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c902a72, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@294ffc88, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@328446e1, org.springframework.security.web.access.ExceptionTranslationFilter@58965e17, org.springframework.security.web.access.intercept.AuthorizationFilter@12039ae0]
+23:51:11.363 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:51:11.364 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:51:11.365 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+23:51:11.383 [main] INFO  c.e.weblibrary.controller.ReportTest - Started ReportTest in 3.371 seconds (process running for 3.962)
+23:51:11.762 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:51:11.764 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:51:11.764 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:51:11.783 [main] INFO  c.e.weblibrary.controller.ReportTest - Starting ReportTest using Java 17.0.7 with PID 5700 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\web-library)
+23:51:11.784 [main] INFO  c.e.weblibrary.controller.ReportTest - No active profile set, falling back to 1 default profile: "default"
+23:51:11.884 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:51:11.891 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 4 JPA repository interfaces.
+23:51:11.925 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+23:51:11.927 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:test user=SA
+23:51:11.927 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+23:51:11.928 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+23:51:11.940 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.941 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.942 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.942 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.943 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.943 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+23:51:11.944 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+23:51:11.945 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.946 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+23:51:11.946 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.946 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.953 [main] INFO  liquibase.changelog - Table employee created
+23:51:11.953 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 1ms
+23:51:11.954 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.954 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.955 [main] INFO  liquibase.changelog - Table position created
+23:51:11.956 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 2ms
+23:51:11.956 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.957 [main] INFO  liquibase.changelog - Table auth_user created
+23:51:11.958 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 2ms
+23:51:11.958 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.960 [main] INFO  liquibase.changelog - Table roles created
+23:51:11.960 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
+23:51:11.961 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.962 [main] INFO  liquibase.changelog - Table report created
+23:51:11.962 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
+23:51:11.963 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.963 [main] INFO  liquibase - Update command completed successfully.
+23:51:11.963 [main] INFO  liquibase.executor - Changelog query completed.
+23:51:11.963 [main] INFO  liquibase.lockservice - Successfully released change log lock
+23:51:11.973 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:51:11.977 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:51:11.977 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:51:11.978 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+23:51:11.985 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23:51:12.016 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:51:12.016 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:51:12.063 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:51:12.071 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74d56a25, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66589578, org.springframework.security.web.context.SecurityContextHolderFilter@1a2f6bef, org.springframework.security.web.header.HeaderWriterFilter@34552734, org.springframework.security.web.authentication.logout.LogoutFilter@fca4863, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2981a626, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4fc23215, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4ce6f39e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1140585, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5233d3e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68f2ccb2, org.springframework.security.web.access.ExceptionTranslationFilter@6f279a75, org.springframework.security.web.access.intercept.AuthorizationFilter@1d26e653]
+23:51:12.282 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:51:12.283 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:51:12.283 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+23:51:12.288 [main] INFO  c.e.weblibrary.controller.ReportTest - Started ReportTest in 0.516 seconds (process running for 4.866)
+23:51:12.352 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = 1
+23:51:12.355 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:51:12.356 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+23:51:12.357 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.

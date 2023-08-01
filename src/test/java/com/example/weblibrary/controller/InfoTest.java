@@ -23,9 +23,9 @@ public class InfoTest {
     @Test
     @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
     void getAppInfo() throws Exception {
-
-        mockMvc.perform(get("/GET/appInfo"))
+        mockMvc.perform(get("/appInfo/"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$").value("test"));
+                .andExpect(jsonPath("$").value("dev"));
     }
 }
+

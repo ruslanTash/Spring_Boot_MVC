@@ -35,12 +35,24 @@ public class EmployeeTest {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    @Test
+    @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
+    void givenNoBody_whenEmptyJsonArray() throws Exception {
+        // Имитируем GET-запрос к "/user"
+        mockMvc.perform(get("/admin/employees/all"))
+                // Проверяем, что статус ответа — 200 (OK)
+                .andExpect(status().isOk())
+                // Проверяем, что тело ответа — массив
+                .andExpect(jsonPath("$").isArray())
+                // Проверяем, что массив пуст
+                .andExpect(jsonPath("$").isEmpty());
+    }
 
 
 
 
     @Test
-    @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
+    @WithMockUser(username = "admin", roles = "USER", password = "1234")
     void getEmployeeWithHighestSalary() throws Exception {
         createEmployees();
         mockMvc.perform(get("/employees/withHighestSalary"))
@@ -49,7 +61,7 @@ public class EmployeeTest {
     }
 
     @Test
-    @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
+    @WithMockUser(username = "admin", roles = "USER", password = "1234")
     void whenNotFound_getStatus404() throws Exception {
         mockMvc.perform(get("/employees/{id}", 10))
                 .andExpect(status().isNotFound());

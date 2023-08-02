@@ -57,7 +57,7 @@ public class EmployeeTest {
         mockMvc.perform(get("/admin/employees/all"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$").isArray())
-                .andExpect(jsonPath("$.length()").value(1))
+                .andExpect(jsonPath("$.length()").value(3))
                 .andExpect(jsonPath("$[0].name").value("Первый"))
                 .andExpect(jsonPath("$[1].name").value("Второй"))
                 .andExpect(jsonPath("$[2].name").value("Последний"));
@@ -88,8 +88,8 @@ public class EmployeeTest {
     void createEmployees() {
         List<Employee> employeeList = List.of(
                 new Employee(1, "Первый", 10000, new Position(1, "Позишен №1")),
-                new Employee(1, "Второй", 20000, new Position(1, "Позишен №1")),
-                new Employee(1, "Последний", 30000, new Position(2, "Позишен №2"))
+                new Employee(2, "Второй", 20000, new Position(1, "Позишен №1")),
+                new Employee(3, "Последний", 30000, new Position(2, "Позишен №2"))
         );
         employeeRepository.saveAll(employeeList);
     }

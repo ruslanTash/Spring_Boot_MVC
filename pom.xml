@@ -8,11 +8,11 @@
         <version>3.1.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>web-library</artifactId>
+    <groupId>ru.skypro.lessons.springboot</groupId>
+    <artifactId>web-library_1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>web-library</name>
-    <description>web-library</description>
+    <name>web-library_1</name>
+    <description>web-library_1</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -28,16 +28,21 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.26</version>
-            <scope>provided</scope>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-            <version>2.0.4</version>
+            <version>2.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
         </dependency>
 
         <dependency>
@@ -45,10 +50,11 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
             <version>3.0.6</version>
         </dependency>
+
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.5.4</version>
+            <version>42.6.0</version>
         </dependency>
 
         <dependency>
@@ -58,49 +64,14 @@
         </dependency>
 
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>1.4.7</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.4.7</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-core</artifactId>
         </dependency>
-
-
-
         <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>4.1.0</version>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-junit-jupiter</artifactId>
-            <version>4.1.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.9.3</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>lein-jupiter</groupId>
-            <artifactId>lein-jupiter</artifactId>
-            <version>0.1.0</version>
-        </dependency>
-
-
     </dependencies>
 
     <build>
@@ -111,12 +82,5 @@
             </plugin>
         </plugins>
     </build>
-    <repositories>
-        <repository>
-            <id>clojars</id>
-            <name>Clojars</name>
-            <url>https://repo.clojars.org/</url>
-        </repository>
-    </repositories>
 
 </project>

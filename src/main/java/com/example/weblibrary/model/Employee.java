@@ -17,7 +17,7 @@ import java.io.Serializable;
 
 public class Employee implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
     private Integer salary;

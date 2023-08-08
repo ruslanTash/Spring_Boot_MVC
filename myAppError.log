@@ -11463,3 +11463,411 @@ select next value for employee_seq [90036-214]
 01:35:04.274 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 01:35:04.274 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
 01:35:04.287 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+12:53:54.515 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.WebLibraryApplicationTests]: WebLibraryApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:53:54.581 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.WebLibraryApplicationTests
+12:53:54.807 [main] INFO  c.e.w.WebLibraryApplicationTests - Starting WebLibraryApplicationTests using Java 20.0.2 with PID 6492 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
+12:53:54.808 [main] INFO  c.e.w.WebLibraryApplicationTests - No active profile set, falling back to 1 default profile: "default"
+12:53:55.313 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:53:55.356 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 4 JPA repository interfaces.
+12:53:55.649 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:53:55.775 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+12:53:55.776 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12:53:55.832 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+12:53:56.130 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.132 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.135 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.137 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.140 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.140 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+12:53:56.150 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+12:53:56.152 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.153 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+12:53:56.154 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.155 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.191 [main] INFO  liquibase.changelog - Table employee created
+12:53:56.192 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 5ms
+12:53:56.194 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.195 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.197 [main] INFO  liquibase.changelog - Table position created
+12:53:56.198 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 1ms
+12:53:56.198 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.208 [main] INFO  liquibase.changelog - Table auth_user created
+12:53:56.209 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 9ms
+12:53:56.210 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.212 [main] INFO  liquibase.changelog - Table roles created
+12:53:56.212 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 2ms
+12:53:56.213 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.216 [main] INFO  liquibase.changelog - Table report created
+12:53:56.216 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 2ms
+12:53:56.217 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.218 [main] INFO  liquibase - Update command completed successfully.
+12:53:56.220 [main] INFO  liquibase.executor - Changelog query completed.
+12:53:56.220 [main] INFO  liquibase.lockservice - Successfully released change log lock
+12:53:56.291 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12:53:56.334 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+12:53:56.335 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+12:53:56.455 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+12:53:56.546 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12:53:56.588 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+12:53:56.753 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+12:53:57.177 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12:53:57.179 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:53:57.454 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+12:53:57.843 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:53:57.933 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7df09f55, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@178be8fc, org.springframework.security.web.context.SecurityContextHolderFilter@1b7123e5, org.springframework.security.web.header.HeaderWriterFilter@3c0a4c8b, org.springframework.security.web.authentication.logout.LogoutFilter@6e0d7be4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e7ac200, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@28897ca, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7f0952cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14a4ba91, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4678e08e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70fe15d, org.springframework.security.web.access.ExceptionTranslationFilter@136dc728, org.springframework.security.web.access.intercept.AuthorizationFilter@1a5e19fe]
+12:53:58.651 [main] INFO  c.e.w.WebLibraryApplicationTests - Started WebLibraryApplicationTests in 3.975 seconds (process running for 4.606)
+12:53:58.987 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:53:58.989 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:53:58.990 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:54:08.553 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.controller.ReportTest]: ReportTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:54:08.639 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.controller.ReportTest
+12:54:08.876 [main] INFO  c.e.weblibrary.controller.ReportTest - Starting ReportTest using Java 20.0.2 with PID 5160 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
+12:54:08.877 [main] INFO  c.e.weblibrary.controller.ReportTest - No active profile set, falling back to 1 default profile: "default"
+12:54:09.352 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:54:09.399 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 4 JPA repository interfaces.
+12:54:09.713 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:54:09.844 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+12:54:09.845 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12:54:09.894 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+12:54:10.157 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.159 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.162 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.164 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.167 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.167 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+12:54:10.176 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+12:54:10.178 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.178 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+12:54:10.180 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.180 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.217 [main] INFO  liquibase.changelog - Table employee created
+12:54:10.217 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 5ms
+12:54:10.219 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.220 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.222 [main] INFO  liquibase.changelog - Table position created
+12:54:10.222 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 2ms
+12:54:10.229 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.232 [main] INFO  liquibase.changelog - Table auth_user created
+12:54:10.232 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 2ms
+12:54:10.233 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.235 [main] INFO  liquibase.changelog - Table roles created
+12:54:10.235 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 2ms
+12:54:10.236 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.237 [main] INFO  liquibase.changelog - Table report created
+12:54:10.237 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
+12:54:10.238 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.239 [main] INFO  liquibase - Update command completed successfully.
+12:54:10.240 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:10.240 [main] INFO  liquibase.lockservice - Successfully released change log lock
+12:54:10.318 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12:54:10.359 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+12:54:10.361 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+12:54:10.485 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+12:54:10.573 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12:54:10.614 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+12:54:10.806 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+12:54:11.246 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12:54:11.248 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:54:11.503 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+12:54:11.874 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:54:11.995 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5331a22c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79a1f55c, org.springframework.security.web.context.SecurityContextHolderFilter@34207fde, org.springframework.security.web.header.HeaderWriterFilter@24456c9e, org.springframework.security.web.authentication.logout.LogoutFilter@7fcbed77, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1805b503, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@68628510, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4c39eac6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75a955bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b7e739, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@815e8e3, org.springframework.security.web.access.ExceptionTranslationFilter@45ec9b22, org.springframework.security.web.access.intercept.AuthorizationFilter@545ffe1]
+12:54:12.788 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+12:54:12.789 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+12:54:12.790 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+12:54:12.809 [main] INFO  c.e.weblibrary.controller.ReportTest - Started ReportTest in 4.067 seconds (process running for 4.784)
+12:54:13.248 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = 1
+12:54:13.285 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:54:13.286 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:54:13.287 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:54:13.309 [main] INFO  c.e.weblibrary.controller.ReportTest - Starting ReportTest using Java 20.0.2 with PID 5160 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
+12:54:13.309 [main] INFO  c.e.weblibrary.controller.ReportTest - No active profile set, falling back to 1 default profile: "default"
+12:54:13.421 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:54:13.430 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
+12:54:13.475 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+12:54:13.477 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:test user=SA
+12:54:13.477 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+12:54:13.478 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+12:54:13.493 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.494 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.495 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.495 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.496 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.496 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+12:54:13.497 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+12:54:13.498 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.499 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+12:54:13.499 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.499 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.505 [main] INFO  liquibase.changelog - Table employee created
+12:54:13.506 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 2ms
+12:54:13.506 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.507 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.508 [main] INFO  liquibase.changelog - Table position created
+12:54:13.509 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 1ms
+12:54:13.509 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.511 [main] INFO  liquibase.changelog - Table auth_user created
+12:54:13.511 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 1ms
+12:54:13.511 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.513 [main] INFO  liquibase.changelog - Table roles created
+12:54:13.513 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
+12:54:13.514 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.515 [main] INFO  liquibase.changelog - Table report created
+12:54:13.516 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
+12:54:13.516 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.516 [main] INFO  liquibase - Update command completed successfully.
+12:54:13.517 [main] INFO  liquibase.executor - Changelog query completed.
+12:54:13.517 [main] INFO  liquibase.lockservice - Successfully released change log lock
+12:54:13.528 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12:54:13.532 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+12:54:13.532 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12:54:13.533 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+12:54:13.540 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+12:54:13.572 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12:54:13.572 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:54:13.624 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:54:13.632 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2511ddb7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13de7bba, org.springframework.security.web.context.SecurityContextHolderFilter@402ceac2, org.springframework.security.web.header.HeaderWriterFilter@4861df70, org.springframework.security.web.authentication.logout.LogoutFilter@303fe95c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6aabacb7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1e55ee99, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@142c0c3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1613e5ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@580930b7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23d5c418, org.springframework.security.web.access.ExceptionTranslationFilter@398efb4d, org.springframework.security.web.access.intercept.AuthorizationFilter@10b2f8ff]
+12:54:13.869 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+12:54:13.869 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+12:54:13.870 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+12:54:13.874 [main] INFO  c.e.weblibrary.controller.ReportTest - Started ReportTest in 0.581 seconds (process running for 5.849)
+12:54:13.904 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = 1
+12:54:13.913 [main] INFO  c.e.weblibrary.service.ReportService - Вызван метод getReportById, ReportId = 1
+12:54:13.918 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:54:13.919 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+12:54:13.919 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+12:54:25.346 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:54:25.383 [main] INFO  c.e.weblibrary.service.ReportService - Вызван метод getReportById, ReportId = 1
+12:54:32.955 [main] INFO  c.e.weblibrary.service.ReportService - Отчёт сохранён, reportId = null
+12:54:32.993 [main] INFO  c.e.weblibrary.service.ReportService - Вызван метод getReportById, ReportId = 1
+12:54:44.133 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 20.0.2 with PID 11108 (C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
+12:54:44.136 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+12:54:44.577 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:54:44.617 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 4 JPA repository interfaces.
+12:54:44.897 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+12:54:44.902 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:54:44.903 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:54:44.903 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+12:54:44.949 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:54:44.949 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 782 ms
+12:54:45.015 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:54:46.049 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:281)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:540)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:590)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 32 common frames omitted
+12:54:46.051 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+12:54:46.053 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+12:54:46.060 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+12:54:46.068 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:286)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 18 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:281)
+	... 20 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:540)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:590)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 32 common frames omitted
+12:55:23.880 [main] INFO  c.e.weblibrary.WebLibraryApplication - Starting WebLibraryApplication using Java 20.0.2 with PID 8908 (C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC\target\classes started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
+12:55:23.883 [main] INFO  c.e.weblibrary.WebLibraryApplication - No active profile set, falling back to 1 default profile: "default"
+12:55:24.273 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:55:24.308 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+12:55:24.585 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+12:55:24.590 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:55:24.591 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:55:24.591 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+12:55:24.635 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:55:24.636 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 727 ms
+12:55:24.702 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:55:25.727 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:281)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:540)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:590)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 32 common frames omitted
+12:55:25.730 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+12:55:25.731 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+12:55:25.738 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+12:55:25.747 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.example.weblibrary.WebLibraryApplication.main(WebLibraryApplication.java:12)
+Caused by: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:286)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 18 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5432 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:281)
+	... 20 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:540)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:590)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 32 common frames omitted

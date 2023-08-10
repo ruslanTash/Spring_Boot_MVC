@@ -13,7 +13,7 @@ public class Role {
     // Создаем поле id-идентификатор.
     @Id
     // Используем AUTO-генерацию идентификаторов.
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String role;
 //    @ManyToOne(fetch = FetchType.LAZY)

@@ -13,6 +13,8 @@ import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.web.servlet.MockMvc;
+import org.testcontainers.containers.PostgreSQLContainer;
+import org.testcontainers.junit.jupiter.Testcontainers;
 
 import java.util.List;
 
@@ -24,6 +26,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
+@Testcontainers
 public class EmployeeTest {
 
     @Autowired
@@ -31,6 +34,9 @@ public class EmployeeTest {
 
     @Autowired
     private EmployeeRepository employeeRepository;
+
+    @Autowired
+    private final PostgreSQLContainer<> postgres = new PostgreSQLContainer<>("postgres:latest");
 
 
     @Test

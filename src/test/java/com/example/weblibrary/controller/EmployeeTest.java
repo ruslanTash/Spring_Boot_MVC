@@ -16,8 +16,17 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
+import org.springframework.test.context.DynamicPropertyRegistry;
+import org.springframework.test.context.DynamicPropertySource;
+import org.testcontainers.junit.jupiter.Container;
+
+
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -35,8 +44,31 @@ public class EmployeeTest {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    @Container
+    private static final PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:latest")
+            .withUsername("postgres")
+            .withPassword("8258");
+
+    @DynamicPropertySource
+    static void postgresProperties(DynamicPropertyRegistry registry) {
+        registry.add("spring.datasource.url", postgres::getJdbcUrl);
+        registry.add("spring.datasource.username", postgres::getUsername);
+        registry.add("spring.datasource.password", postgres::getPassword);
+    }
+
     @Autowired
-    private final PostgreSQLContainer<> postgres = new PostgreSQLContainer<>("postgres:latest");
+    private DataSource dataSource;
+
+    @Test
+    void testPostgresql() throws SQLException {
+        try (Connection conn = dataSource.getConnection()) {
+            assertThat(conn).isNotNull();
+        }
+    }
+
+
+
+
 
 
     @Test

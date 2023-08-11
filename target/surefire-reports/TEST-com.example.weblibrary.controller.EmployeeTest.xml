@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.weblibrary.controller.EmployeeTest" time="9.424" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.weblibrary.controller.EmployeeTest" time="7.753" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC\target\test-classes;C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC\target\classes;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.1.0\spring-boot-starter-web-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter\3.1.0\spring-boot-starter-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot\3.1.0\spring-boot-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.1.0\spring-boot-autoconfigure-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.1.0\spring-boot-starter-logging-3.1.0.jar;C:\Users\Ruslan\.m2\repository\ch\qos\logback\logback-classic\1.4.7\logback-classic-1.4.7.jar;C:\Users\Ruslan\.m2\repository\ch\qos\logback\logback-core\1.4.7\logback-core-1.4.7.jar;C:\Users\Ruslan\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.20.0\log4j-to-slf4j-2.20.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Ruslan\.m2\repository\org\slf4j\jul-to-slf4j\2.0.7\jul-to-slf4j-2.0.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.1.0\spring-boot-starter-json-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.0\jackson-databind-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.0\jackson-annotations-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.0\jackson-core-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.0\jackson-datatype-jdk8-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.0\jackson-datatype-jsr310-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.0\jackson-module-parameter-names-2.15.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.1.0\spring-boot-starter-tomcat-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.8\tomcat-embed-core-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.8\tomcat-embed-el-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.8\tomcat-embed-websocket-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-web\6.0.9\spring-web-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-beans\6.0.9\spring-beans-6.0.9.jar;C:\Users\Ruslan\.m2\repository\io\micrometer\micrometer-observation\1.11.0\micrometer-observation-1.11.0.jar;C:\Users\Ruslan\.m2\repository\io\micrometer\micrometer-commons\1.11.0\micrometer-commons-1.11.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-webmvc\6.0.9\spring-webmvc-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-context\6.0.9\spring-context-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-expression\6.0.9\spring-expression-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.1.0\spring-boot-starter-test-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-test\3.1.0\spring-boot-test-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.1.0\spring-boot-test-autoconfigure-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\Ruslan\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\Ruslan\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Ruslan\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\Ruslan\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\Ruslan\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Ruslan\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Ruslan\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Ruslan\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Ruslan\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Ruslan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Ruslan\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\Ruslan\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.4\byte-buddy-agent-1.14.4.jar;C:\Users\Ruslan\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Ruslan\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\Ruslan\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Ruslan\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-core\6.0.9\spring-core-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-jcl\6.0.9\spring-jcl-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-test\6.0.9\spring-test-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-test\6.1.0\spring-security-test-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-core\6.1.0\spring-security-core-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-crypto\6.1.0\spring-security-crypto-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-web\6.1.0\spring-security-web-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.0.0\springdoc-openapi-starter-webmvc-ui-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.0.0\springdoc-openapi-starter-webmvc-api-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.0.0\springdoc-openapi-starter-common-2.0.0.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.7\swagger-core-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.7\swagger-annotations-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.7\swagger-models-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.0\jackson-dataformat-yaml-2.15.0.jar;C:\Users\Ruslan\.m2\repository\org\webjars\swagger-ui\4.15.5\swagger-ui-4.15.5.jar;C:\Users\Ruslan\.m2\repository\org\webjars\webjars-locator-core\0.52\webjars-locator-core-0.52.jar;C:\Users\Ruslan\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\Ruslan\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.0.6\spring-boot-starter-data-jpa-3.0.6.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.1.0\spring-boot-starter-aop-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\aspectj\aspectjweaver\1.9.19\aspectjweaver-1.9.19.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.1.0\spring-boot-starter-jdbc-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-jdbc\6.0.9\spring-jdbc-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\hibernate\orm\hibernate-core\6.2.2.Final\hibernate-core-6.2.2.Final.jar;C:\Users\Ruslan\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Ruslan\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Ruslan\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\Ruslan\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Ruslan\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\Ruslan\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\Ruslan\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\Ruslan\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Ruslan\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\data\spring-data-jpa\3.1.0\spring-data-jpa-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\data\spring-data-commons\3.1.0\spring-data-commons-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-orm\6.0.9\spring-orm-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-tx\6.0.9\spring-tx-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-aspects\6.0.9\spring-aspects-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\Ruslan\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.1.0\spring-boot-starter-security-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-aop\6.0.9\spring-aop-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-config\6.1.0\spring-security-config-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\liquibase\liquibase-core\4.20.0\liquibase-core-4.20.0.jar;C:\Users\Ruslan\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Ruslan\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Ruslan\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\Ruslan\.m2\repository\com\opencsv\opencsv\5.7.1\opencsv-5.7.1.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Ruslan\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\postgresql\1.18.3\postgresql-1.18.3.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\jdbc\1.18.0\jdbc-1.18.0.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\database-commons\1.18.0\database-commons-1.18.0.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\junit-jupiter\1.18.3\junit-jupiter-1.18.3.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\testcontainers\1.18.0\testcontainers-1.18.0.jar;C:\Users\Ruslan\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Ruslan\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-compress\1.22\commons-compress-1.22.jar;C:\Users\Ruslan\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\Ruslan\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-api\3.3.0\docker-java-api-3.3.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.0\docker-java-transport-zerodep-3.3.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-transport\3.3.0\docker-java-transport-3.3.0.jar;C:\Users\Ruslan\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;"/>
+    <property name="java.class.path" value="C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC\target\test-classes;C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC\target\classes;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.1.0\spring-boot-starter-web-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter\3.1.0\spring-boot-starter-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot\3.1.0\spring-boot-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.1.0\spring-boot-autoconfigure-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.1.0\spring-boot-starter-logging-3.1.0.jar;C:\Users\Ruslan\.m2\repository\ch\qos\logback\logback-classic\1.4.7\logback-classic-1.4.7.jar;C:\Users\Ruslan\.m2\repository\ch\qos\logback\logback-core\1.4.7\logback-core-1.4.7.jar;C:\Users\Ruslan\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.20.0\log4j-to-slf4j-2.20.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Ruslan\.m2\repository\org\slf4j\jul-to-slf4j\2.0.7\jul-to-slf4j-2.0.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.1.0\spring-boot-starter-json-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.0\jackson-databind-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.0\jackson-annotations-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.0\jackson-core-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.0\jackson-datatype-jdk8-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.0\jackson-datatype-jsr310-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.0\jackson-module-parameter-names-2.15.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.1.0\spring-boot-starter-tomcat-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.8\tomcat-embed-core-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.8\tomcat-embed-el-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.8\tomcat-embed-websocket-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-web\6.0.9\spring-web-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-beans\6.0.9\spring-beans-6.0.9.jar;C:\Users\Ruslan\.m2\repository\io\micrometer\micrometer-observation\1.11.0\micrometer-observation-1.11.0.jar;C:\Users\Ruslan\.m2\repository\io\micrometer\micrometer-commons\1.11.0\micrometer-commons-1.11.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-webmvc\6.0.9\spring-webmvc-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-context\6.0.9\spring-context-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-expression\6.0.9\spring-expression-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.1.0\spring-boot-starter-test-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-test\3.1.0\spring-boot-test-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.1.0\spring-boot-test-autoconfigure-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\Ruslan\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\Ruslan\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Ruslan\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\Ruslan\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\Ruslan\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Ruslan\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Ruslan\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Ruslan\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Ruslan\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Ruslan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Ruslan\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\Ruslan\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.4\byte-buddy-agent-1.14.4.jar;C:\Users\Ruslan\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Ruslan\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\Ruslan\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Ruslan\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-core\6.0.9\spring-core-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-jcl\6.0.9\spring-jcl-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-test\6.0.9\spring-test-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-test\6.1.0\spring-security-test-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-core\6.1.0\spring-security-core-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-crypto\6.1.0\spring-security-crypto-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-web\6.1.0\spring-security-web-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.0.0\springdoc-openapi-starter-webmvc-ui-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.0.0\springdoc-openapi-starter-webmvc-api-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.0.0\springdoc-openapi-starter-common-2.0.0.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.7\swagger-core-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.7\swagger-annotations-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.7\swagger-models-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.0\jackson-dataformat-yaml-2.15.0.jar;C:\Users\Ruslan\.m2\repository\org\webjars\swagger-ui\4.15.5\swagger-ui-4.15.5.jar;C:\Users\Ruslan\.m2\repository\org\webjars\webjars-locator-core\0.52\webjars-locator-core-0.52.jar;C:\Users\Ruslan\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\Ruslan\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.0.6\spring-boot-starter-data-jpa-3.0.6.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.1.0\spring-boot-starter-aop-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\aspectj\aspectjweaver\1.9.19\aspectjweaver-1.9.19.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.1.0\spring-boot-starter-jdbc-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-jdbc\6.0.9\spring-jdbc-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\hibernate\orm\hibernate-core\6.2.2.Final\hibernate-core-6.2.2.Final.jar;C:\Users\Ruslan\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Ruslan\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Ruslan\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\Ruslan\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Ruslan\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\Ruslan\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\Ruslan\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\Ruslan\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Ruslan\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\data\spring-data-jpa\3.1.0\spring-data-jpa-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\data\spring-data-commons\3.1.0\spring-data-commons-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-orm\6.0.9\spring-orm-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-tx\6.0.9\spring-tx-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-aspects\6.0.9\spring-aspects-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\Ruslan\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.1.0\spring-boot-starter-security-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-aop\6.0.9\spring-aop-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-config\6.1.0\spring-security-config-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\liquibase\liquibase-core\4.20.0\liquibase-core-4.20.0.jar;C:\Users\Ruslan\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Ruslan\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Ruslan\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\Ruslan\.m2\repository\com\opencsv\opencsv\5.7.1\opencsv-5.7.1.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\postgresql\1.18.3\postgresql-1.18.3.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\jdbc\1.18.0\jdbc-1.18.0.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\database-commons\1.18.0\database-commons-1.18.0.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\junit-jupiter\1.18.3\junit-jupiter-1.18.3.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\testcontainers\1.18.0\testcontainers-1.18.0.jar;C:\Users\Ruslan\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Ruslan\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-compress\1.22\commons-compress-1.22.jar;C:\Users\Ruslan\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\Ruslan\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-api\3.3.0\docker-java-api-3.3.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.0\docker-java-transport-zerodep-3.3.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-transport\3.3.0\docker-java-transport-3.3.0.jar;C:\Users\Ruslan\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\Ruslan\.jdks\openjdk-20.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\Ruslan\AppData\Local\Temp\surefire9896793536152787964\surefirebooter-20230810205704039_3.jar C:\Users\Ruslan\AppData\Local\Temp\surefire9896793536152787964 2023-08-10T20-57-03_947-jvmRun1 surefire-20230810205704039_1tmp surefire_0-20230810205704039_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Ruslan\AppData\Local\Temp\surefire8232982491216551269\surefirebooter-20230811183228132_3.jar C:\Users\Ruslan\AppData\Local\Temp\surefire8232982491216551269 2023-08-11T18-32-28_046-jvmRun1 surefire-20230811183228132_1tmp surefire_0-20230811183228132_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC\target\test-classes;C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC\target\classes;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.1.0\spring-boot-starter-web-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter\3.1.0\spring-boot-starter-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot\3.1.0\spring-boot-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.1.0\spring-boot-autoconfigure-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.1.0\spring-boot-starter-logging-3.1.0.jar;C:\Users\Ruslan\.m2\repository\ch\qos\logback\logback-classic\1.4.7\logback-classic-1.4.7.jar;C:\Users\Ruslan\.m2\repository\ch\qos\logback\logback-core\1.4.7\logback-core-1.4.7.jar;C:\Users\Ruslan\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.20.0\log4j-to-slf4j-2.20.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Ruslan\.m2\repository\org\slf4j\jul-to-slf4j\2.0.7\jul-to-slf4j-2.0.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.1.0\spring-boot-starter-json-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.0\jackson-databind-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.0\jackson-annotations-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.0\jackson-core-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.0\jackson-datatype-jdk8-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.0\jackson-datatype-jsr310-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.0\jackson-module-parameter-names-2.15.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.1.0\spring-boot-starter-tomcat-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.8\tomcat-embed-core-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.8\tomcat-embed-el-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.8\tomcat-embed-websocket-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-web\6.0.9\spring-web-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-beans\6.0.9\spring-beans-6.0.9.jar;C:\Users\Ruslan\.m2\repository\io\micrometer\micrometer-observation\1.11.0\micrometer-observation-1.11.0.jar;C:\Users\Ruslan\.m2\repository\io\micrometer\micrometer-commons\1.11.0\micrometer-commons-1.11.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-webmvc\6.0.9\spring-webmvc-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-context\6.0.9\spring-context-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-expression\6.0.9\spring-expression-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.1.0\spring-boot-starter-test-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-test\3.1.0\spring-boot-test-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.1.0\spring-boot-test-autoconfigure-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\Ruslan\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\Ruslan\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Ruslan\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\Ruslan\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\Ruslan\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Ruslan\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Ruslan\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Ruslan\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Ruslan\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Ruslan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Ruslan\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\Ruslan\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.4\byte-buddy-agent-1.14.4.jar;C:\Users\Ruslan\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Ruslan\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\Ruslan\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Ruslan\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-core\6.0.9\spring-core-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-jcl\6.0.9\spring-jcl-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-test\6.0.9\spring-test-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-test\6.1.0\spring-security-test-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-core\6.1.0\spring-security-core-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-crypto\6.1.0\spring-security-crypto-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-web\6.1.0\spring-security-web-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.0.0\springdoc-openapi-starter-webmvc-ui-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.0.0\springdoc-openapi-starter-webmvc-api-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.0.0\springdoc-openapi-starter-common-2.0.0.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.7\swagger-core-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.7\swagger-annotations-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.7\swagger-models-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.0\jackson-dataformat-yaml-2.15.0.jar;C:\Users\Ruslan\.m2\repository\org\webjars\swagger-ui\4.15.5\swagger-ui-4.15.5.jar;C:\Users\Ruslan\.m2\repository\org\webjars\webjars-locator-core\0.52\webjars-locator-core-0.52.jar;C:\Users\Ruslan\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\Ruslan\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.0.6\spring-boot-starter-data-jpa-3.0.6.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.1.0\spring-boot-starter-aop-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\aspectj\aspectjweaver\1.9.19\aspectjweaver-1.9.19.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.1.0\spring-boot-starter-jdbc-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-jdbc\6.0.9\spring-jdbc-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\hibernate\orm\hibernate-core\6.2.2.Final\hibernate-core-6.2.2.Final.jar;C:\Users\Ruslan\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Ruslan\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Ruslan\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\Ruslan\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Ruslan\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\Ruslan\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\Ruslan\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\Ruslan\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Ruslan\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\data\spring-data-jpa\3.1.0\spring-data-jpa-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\data\spring-data-commons\3.1.0\spring-data-commons-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-orm\6.0.9\spring-orm-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-tx\6.0.9\spring-tx-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-aspects\6.0.9\spring-aspects-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\Ruslan\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.1.0\spring-boot-starter-security-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-aop\6.0.9\spring-aop-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-config\6.1.0\spring-security-config-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\liquibase\liquibase-core\4.20.0\liquibase-core-4.20.0.jar;C:\Users\Ruslan\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Ruslan\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Ruslan\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\Ruslan\.m2\repository\com\opencsv\opencsv\5.7.1\opencsv-5.7.1.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Ruslan\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\postgresql\1.18.3\postgresql-1.18.3.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\jdbc\1.18.0\jdbc-1.18.0.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\database-commons\1.18.0\database-commons-1.18.0.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\junit-jupiter\1.18.3\junit-jupiter-1.18.3.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\testcontainers\1.18.0\testcontainers-1.18.0.jar;C:\Users\Ruslan\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Ruslan\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-compress\1.22\commons-compress-1.22.jar;C:\Users\Ruslan\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\Ruslan\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-api\3.3.0\docker-java-api-3.3.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.0\docker-java-transport-zerodep-3.3.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-transport\3.3.0\docker-java-transport-3.3.0.jar;C:\Users\Ruslan\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC\target\test-classes;C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC\target\classes;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.1.0\spring-boot-starter-web-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter\3.1.0\spring-boot-starter-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot\3.1.0\spring-boot-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.1.0\spring-boot-autoconfigure-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.1.0\spring-boot-starter-logging-3.1.0.jar;C:\Users\Ruslan\.m2\repository\ch\qos\logback\logback-classic\1.4.7\logback-classic-1.4.7.jar;C:\Users\Ruslan\.m2\repository\ch\qos\logback\logback-core\1.4.7\logback-core-1.4.7.jar;C:\Users\Ruslan\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.20.0\log4j-to-slf4j-2.20.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Ruslan\.m2\repository\org\slf4j\jul-to-slf4j\2.0.7\jul-to-slf4j-2.0.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.1.0\spring-boot-starter-json-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.0\jackson-databind-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.0\jackson-annotations-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.0\jackson-core-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.0\jackson-datatype-jdk8-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.0\jackson-datatype-jsr310-2.15.0.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.0\jackson-module-parameter-names-2.15.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.1.0\spring-boot-starter-tomcat-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.8\tomcat-embed-core-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.8\tomcat-embed-el-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.8\tomcat-embed-websocket-10.1.8.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-web\6.0.9\spring-web-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-beans\6.0.9\spring-beans-6.0.9.jar;C:\Users\Ruslan\.m2\repository\io\micrometer\micrometer-observation\1.11.0\micrometer-observation-1.11.0.jar;C:\Users\Ruslan\.m2\repository\io\micrometer\micrometer-commons\1.11.0\micrometer-commons-1.11.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-webmvc\6.0.9\spring-webmvc-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-context\6.0.9\spring-context-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-expression\6.0.9\spring-expression-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.1.0\spring-boot-starter-test-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-test\3.1.0\spring-boot-test-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.1.0\spring-boot-test-autoconfigure-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\Ruslan\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\Ruslan\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Ruslan\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\Ruslan\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\Ruslan\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Ruslan\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Ruslan\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Ruslan\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Ruslan\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Ruslan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Ruslan\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Ruslan\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\Ruslan\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.4\byte-buddy-agent-1.14.4.jar;C:\Users\Ruslan\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Ruslan\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\Ruslan\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Ruslan\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-core\6.0.9\spring-core-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-jcl\6.0.9\spring-jcl-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-test\6.0.9\spring-test-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-test\6.1.0\spring-security-test-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-core\6.1.0\spring-security-core-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-crypto\6.1.0\spring-security-crypto-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-web\6.1.0\spring-security-web-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.0.0\springdoc-openapi-starter-webmvc-ui-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.0.0\springdoc-openapi-starter-webmvc-api-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.0.0\springdoc-openapi-starter-common-2.0.0.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.7\swagger-core-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.7\swagger-annotations-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.7\swagger-models-jakarta-2.2.7.jar;C:\Users\Ruslan\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.0\jackson-dataformat-yaml-2.15.0.jar;C:\Users\Ruslan\.m2\repository\org\webjars\swagger-ui\4.15.5\swagger-ui-4.15.5.jar;C:\Users\Ruslan\.m2\repository\org\webjars\webjars-locator-core\0.52\webjars-locator-core-0.52.jar;C:\Users\Ruslan\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\Ruslan\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.0.6\spring-boot-starter-data-jpa-3.0.6.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.1.0\spring-boot-starter-aop-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\aspectj\aspectjweaver\1.9.19\aspectjweaver-1.9.19.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.1.0\spring-boot-starter-jdbc-3.1.0.jar;C:\Users\Ruslan\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-jdbc\6.0.9\spring-jdbc-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\hibernate\orm\hibernate-core\6.2.2.Final\hibernate-core-6.2.2.Final.jar;C:\Users\Ruslan\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Ruslan\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Ruslan\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\Ruslan\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Ruslan\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\Ruslan\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\Ruslan\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\Ruslan\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\Ruslan\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\Ruslan\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Ruslan\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\Ruslan\.m2\repository\org\springframework\data\spring-data-jpa\3.1.0\spring-data-jpa-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\data\spring-data-commons\3.1.0\spring-data-commons-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-orm\6.0.9\spring-orm-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-tx\6.0.9\spring-tx-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-aspects\6.0.9\spring-aspects-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\Ruslan\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.1.0\spring-boot-starter-security-3.1.0.jar;C:\Users\Ruslan\.m2\repository\org\springframework\spring-aop\6.0.9\spring-aop-6.0.9.jar;C:\Users\Ruslan\.m2\repository\org\springframework\security\spring-security-config\6.1.0\spring-security-config-6.1.0.jar;C:\Users\Ruslan\.m2\repository\org\liquibase\liquibase-core\4.20.0\liquibase-core-4.20.0.jar;C:\Users\Ruslan\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Ruslan\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Ruslan\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\Ruslan\.m2\repository\com\opencsv\opencsv\5.7.1\opencsv-5.7.1.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\postgresql\1.18.3\postgresql-1.18.3.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\jdbc\1.18.0\jdbc-1.18.0.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\database-commons\1.18.0\database-commons-1.18.0.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\junit-jupiter\1.18.3\junit-jupiter-1.18.3.jar;C:\Users\Ruslan\.m2\repository\org\testcontainers\testcontainers\1.18.0\testcontainers-1.18.0.jar;C:\Users\Ruslan\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Ruslan\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\Ruslan\.m2\repository\org\apache\commons\commons-compress\1.22\commons-compress-1.22.jar;C:\Users\Ruslan\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\Ruslan\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-api\3.3.0\docker-java-api-3.3.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.0\docker-java-transport-zerodep-3.3.0.jar;C:\Users\Ruslan\.m2\repository\com\github\docker-java\docker-java-transport\3.3.0\docker-java-transport-3.3.0.jar;C:\Users\Ruslan\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Ruslan"/>
     <property name="user.language" value="ru"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="C:\Users\Ruslan\AppData\Local\Temp\surefire9896793536152787964\surefirebooter-20230810205704039_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Ruslan\AppData\Local\Temp\surefire8232982491216551269\surefirebooter-20230811183228132_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.2+9-78"/>
@@ -48,16 +48,16 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\Ruslan\AppData\Local\Temp\"/>
     <property name="idea.version" value="2023.2"/>
-    <property name="com.zaxxer.hikari.pool_number" value="8"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
     <property name="java.version" value="20.0.2"/>
     <property name="user.dir" value="C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="1956"/>
+    <property name="PID" value="2904"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\Ruslan\.jdks\openjdk-20.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Ruslan\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Users\Ruslan\.jdks\openjdk-20.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Google\Chrome\Application;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Ruslan\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -65,9 +65,29 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="getEmployeeWithHighestSalary" classname="com.example.weblibrary.controller.EmployeeTest" time="0.612">
-    <system-out><![CDATA[20:57:04.841 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.controller.EmployeeTest]: EmployeeTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-20:57:04.958 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.controller.EmployeeTest
+  <testcase name="getEmployeeWithHighestSalary" classname="com.example.weblibrary.controller.EmployeeTest" time="0.493">
+    <system-out><![CDATA[18:32:28.738 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.weblibrary.controller.EmployeeTest]: EmployeeTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:32:28.821 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.weblibrary.WebLibraryApplication for test class com.example.weblibrary.controller.EmployeeTest
+18:32:28.948 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+18:32:29.081 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+18:32:29.256 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+18:32:29.257 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+18:32:29.269 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 24.0.5
+  API Version: 1.43
+  Operating System: Docker Desktop
+  Total Memory: 25533 MB
+18:32:29.285 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Creating container for image: testcontainers/ryuk:0.4.0
+18:32:29.418 [main] INFO  o.t.utility.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+18:32:29.491 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 is starting: 269e95b60dabba414f788cc02bc0b26c942205d587e9c9f5b3fef35722503b1b
+18:32:29.978 [main] INFO  tc.testcontainers/ryuk:0.4.0 - Container testcontainers/ryuk:0.4.0 started in PT0.7031639S
+18:32:29.983 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+18:32:29.983 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+18:32:29.984 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+18:32:29.985 [main] INFO  tc.postgres:latest - Creating container for image: postgres:latest
+18:32:30.006 [main] INFO  tc.postgres:latest - Container postgres:latest is starting: 1ee0bf884218105b95bfd59fbf32ea474a5bfbd6962292cad6a78cacc7a0825e
+18:32:31.182 [main] INFO  tc.postgres:latest - Container postgres:latest started in PT1.197393S
+18:32:31.183 [main] INFO  tc.postgres:latest - Container is started (JDBC URL: jdbc:postgresql://localhost:53753/test?loggerLevel=OFF)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -77,581 +97,103 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.0)
 
-20:57:05.261 [main] INFO  c.e.w.controller.EmployeeTest - Starting EmployeeTest using Java 20.0.2 with PID 1956 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
-20:57:05.262 [main] INFO  c.e.w.controller.EmployeeTest - No active profile set, falling back to 1 default profile: "default"
-20:57:05.833 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-20:57:05.875 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 4 JPA repository interfaces.
-20:57:06.202 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-20:57:06.344 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
-20:57:06.345 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-20:57:06.398 [main] INFO  liquibase.database - Set default schema name to PUBLIC
-20:57:06.703 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:06.705 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:06.708 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:06.710 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:06.713 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:06.713 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
-20:57:06.722 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
-20:57:06.725 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:06.725 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
-20:57:06.727 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:06.728 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:31.345 [main] INFO  c.e.w.controller.EmployeeTest - Starting EmployeeTest using Java 20.0.2 with PID 2904 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
+18:32:31.346 [main] INFO  c.e.w.controller.EmployeeTest - No active profile set, falling back to 1 default profile: "default"
+18:32:31.806 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:32:31.845 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 4 JPA repository interfaces.
+18:32:32.124 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:32:32.252 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18faaff6
+18:32:32.253 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:32:32.339 [main] INFO  liquibase.database - Set default schema name to public
+18:32:32.555 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.558 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.563 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.567 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.569 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.570 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+18:32:32.583 [main] INFO  liquibase.changelog - Creating database history table with name: public.databasechangelog
+18:32:32.586 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.588 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+18:32:32.590 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.593 [main] INFO  liquibase.executor - Changelog query completed.
 Running Changeset: liquibase/changesets/create_employee.yml::1::developer
-20:57:06.762 [main] INFO  liquibase.changelog - Table employee created
-20:57:06.763 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 6ms
-20:57:06.765 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:06.766 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.637 [main] INFO  liquibase.changelog - Table employee created
+18:32:32.638 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 4ms
+18:32:32.640 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.641 [main] INFO  liquibase.executor - Changelog query completed.
 Running Changeset: liquibase/changesets/create_position.yml::1::developer
-20:57:06.768 [main] INFO  liquibase.changelog - Table position created
-20:57:06.768 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 2ms
-20:57:06.769 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.644 [main] INFO  liquibase.changelog - Table position created
+18:32:32.645 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 3ms
+18:32:32.647 [main] INFO  liquibase.executor - Changelog query completed.
 Running Changeset: liquibase/changesets/create_auth_user.yml::3::developer
-20:57:06.771 [main] INFO  liquibase.changelog - Table auth_user created
-20:57:06.771 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 2ms
-20:57:06.772 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.650 [main] INFO  liquibase.changelog - Table auth_user created
+18:32:32.651 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 4ms
+18:32:32.652 [main] INFO  liquibase.executor - Changelog query completed.
 Running Changeset: liquibase/changesets/create_role.yml::4::developer
-20:57:06.774 [main] INFO  liquibase.changelog - Table roles created
-20:57:06.774 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 2ms
-20:57:06.775 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.656 [main] INFO  liquibase.changelog - Table roles created
+18:32:32.657 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 4ms
+18:32:32.658 [main] INFO  liquibase.executor - Changelog query completed.
 Running Changeset: liquibase/changesets/create_report.yml::1::developer
-20:57:06.777 [main] INFO  liquibase.changelog - Table report created
-20:57:06.778 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 2ms
-20:57:06.779 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:06.780 [main] INFO  liquibase - Update command completed successfully.
-20:57:06.781 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:06.781 [main] INFO  liquibase.lockservice - Successfully released change log lock
-20:57:06.881 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-20:57:06.924 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
-20:57:06.926 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
-20:57:07.022 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:07.112 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-20:57:07.152 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-20:57:07.302 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:07.766 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-20:57:07.769 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-20:57:08.068 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-20:57:08.490 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-20:57:08.598 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@442612a6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65314e4, org.springframework.security.web.context.SecurityContextHolderFilter@5c71329f, org.springframework.security.web.header.HeaderWriterFilter@18accf9c, org.springframework.security.web.authentication.logout.LogoutFilter@6431ab21, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@614da024, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2991524, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@a93c88a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7940d27b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6fc98c70, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@741cb82c, org.springframework.security.web.access.ExceptionTranslationFilter@4dc9de0e, org.springframework.security.web.access.intercept.AuthorizationFilter@20bc417f]
-20:57:09.496 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-20:57:09.496 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-20:57:09.498 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-20:57:09.514 [main] INFO  c.e.w.controller.EmployeeTest - Started EmployeeTest in 4.444 seconds (process running for 5.416)
-20:57:10.059 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
-20:57:10.060 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
-20:57:10.062 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
-20:57:10.063 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
-20:57:10.063 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
-20:57:10.135 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-20:57:10.136 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-20:57:10.138 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:32:32.662 [main] INFO  liquibase.changelog - Table report created
+18:32:32.663 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 3ms
+18:32:32.664 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.665 [main] INFO  liquibase - Update command completed successfully.
+18:32:32.667 [main] INFO  liquibase.executor - Changelog query completed.
+18:32:32.668 [main] INFO  liquibase.lockservice - Successfully released change log lock
+18:32:32.731 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:32:32.773 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+18:32:32.775 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+18:32:32.879 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+18:32:32.962 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:32:32.998 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$DialectResolutionInfoImpl@72c175f1
+18:32:33.145 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+18:32:33.583 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:32:33.585 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:32:33.802 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+18:32:34.157 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:32:34.240 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6f61698, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b694a00, org.springframework.security.web.context.SecurityContextHolderFilter@5242e9f7, org.springframework.security.web.header.HeaderWriterFilter@31857c80, org.springframework.security.web.authentication.logout.LogoutFilter@385d9880, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5dca9fd8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@162807e5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@12d432ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c9e149, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bb4fc7d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e095ba6, org.springframework.security.web.access.ExceptionTranslationFilter@57d3c5cd, org.springframework.security.web.access.intercept.AuthorizationFilter@29f68e88]
+18:32:35.031 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+18:32:35.031 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+18:32:35.032 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+18:32:35.046 [main] INFO  c.e.w.controller.EmployeeTest - Started EmployeeTest in 3.838 seconds (process running for 6.849)
+18:32:35.488 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:32:35.491 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:32:35.493 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:32:35.495 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:32:35.495 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошен сотрудник/сотрудники с максимальной зарплатой
 ]]></system-out>
   </testcase>
-  <testcase name="addEmployeeFromFile" classname="com.example.weblibrary.controller.EmployeeTest" time="0.051">
-    <system-out><![CDATA[
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.1.0)
-
-20:57:10.163 [main] INFO  c.e.w.controller.EmployeeTest - Starting EmployeeTest using Java 20.0.2 with PID 1956 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
-20:57:10.163 [main] INFO  c.e.w.controller.EmployeeTest - No active profile set, falling back to 1 default profile: "default"
-20:57:10.304 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-20:57:10.314 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
-20:57:10.359 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-20:57:10.360 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:test user=SA
-20:57:10.361 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-20:57:10.361 [main] INFO  liquibase.database - Set default schema name to PUBLIC
-20:57:10.378 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:10.379 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:10.379 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:10.380 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:10.381 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:10.382 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
-20:57:10.383 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
-20:57:10.385 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:10.386 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
-20:57:10.387 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:10.388 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_employee.yml::1::developer
-20:57:10.396 [main] INFO  liquibase.changelog - Table employee created
-20:57:10.397 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 2ms
-20:57:10.398 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:10.398 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_position.yml::1::developer
-20:57:10.401 [main] INFO  liquibase.changelog - Table position created
-20:57:10.401 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 2ms
-20:57:10.402 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_auth_user.yml::3::developer
-20:57:10.404 [main] INFO  liquibase.changelog - Table auth_user created
-20:57:10.404 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 2ms
-20:57:10.405 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_role.yml::4::developer
-20:57:10.406 [main] INFO  liquibase.changelog - Table roles created
-20:57:10.407 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 2ms
-20:57:10.407 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_report.yml::1::developer
-20:57:10.412 [main] INFO  liquibase.changelog - Table report created
-20:57:10.414 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 5ms
-20:57:10.417 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:10.418 [main] INFO  liquibase - Update command completed successfully.
-20:57:10.419 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:10.420 [main] INFO  liquibase.lockservice - Successfully released change log lock
-20:57:10.443 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-20:57:10.449 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:10.449 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-20:57:10.450 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-20:57:10.458 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:10.497 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-20:57:10.497 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-20:57:10.549 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-20:57:10.557 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45ca96f3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cb15553, org.springframework.security.web.context.SecurityContextHolderFilter@1b00f65a, org.springframework.security.web.header.HeaderWriterFilter@1c1ab84e, org.springframework.security.web.authentication.logout.LogoutFilter@6816b13d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18084396, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@52416fd7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2b728f15, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5bafbe15, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b506c3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71bc7d1e, org.springframework.security.web.access.ExceptionTranslationFilter@304e1e2d, org.springframework.security.web.access.intercept.AuthorizationFilter@2959dfb7]
-20:57:10.867 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-20:57:10.867 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-20:57:10.868 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-20:57:10.872 [main] INFO  c.e.w.controller.EmployeeTest - Started EmployeeTest in 0.727 seconds (process running for 6.774)
-20:57:10.914 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод uploadEmployees
-20:57:10.919 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
-20:57:10.923 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-20:57:10.924 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-20:57:10.924 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+  <testcase name="addEmployeeFromFile" classname="com.example.weblibrary.controller.EmployeeTest" time="0.052">
+    <system-out><![CDATA[18:32:35.597 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод uploadEmployees
+18:32:35.604 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
 ]]></system-out>
   </testcase>
-  <testcase name="givenNoBody_whenEmptyJsonArray" classname="com.example.weblibrary.controller.EmployeeTest" time="0.012">
-    <system-out><![CDATA[
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.1.0)
-
-20:57:10.940 [main] INFO  c.e.w.controller.EmployeeTest - Starting EmployeeTest using Java 20.0.2 with PID 1956 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
-20:57:10.941 [main] INFO  c.e.w.controller.EmployeeTest - No active profile set, falling back to 1 default profile: "default"
-20:57:11.050 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-20:57:11.059 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
-20:57:11.094 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-20:57:11.097 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:test user=SA
-20:57:11.097 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-20:57:11.098 [main] INFO  liquibase.database - Set default schema name to PUBLIC
-20:57:11.112 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.113 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.113 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.114 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.115 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.115 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
-20:57:11.116 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
-20:57:11.118 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.118 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
-20:57:11.119 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.119 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_employee.yml::1::developer
-20:57:11.124 [main] INFO  liquibase.changelog - Table employee created
-20:57:11.125 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 2ms
-20:57:11.125 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.126 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_position.yml::1::developer
-20:57:11.127 [main] INFO  liquibase.changelog - Table position created
-20:57:11.128 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 2ms
-20:57:11.129 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_auth_user.yml::3::developer
-20:57:11.130 [main] INFO  liquibase.changelog - Table auth_user created
-20:57:11.131 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 2ms
-20:57:11.132 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_role.yml::4::developer
-20:57:11.134 [main] INFO  liquibase.changelog - Table roles created
-20:57:11.135 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 2ms
-20:57:11.135 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_report.yml::1::developer
-20:57:11.137 [main] INFO  liquibase.changelog - Table report created
-20:57:11.137 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
-20:57:11.138 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.138 [main] INFO  liquibase - Update command completed successfully.
-20:57:11.139 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.139 [main] INFO  liquibase.lockservice - Successfully released change log lock
-20:57:11.155 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-20:57:11.159 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:11.159 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-20:57:11.160 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-20:57:11.171 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:11.204 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-20:57:11.205 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-20:57:11.248 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-20:57:11.256 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a39c005, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45a9dc8e, org.springframework.security.web.context.SecurityContextHolderFilter@912756d, org.springframework.security.web.header.HeaderWriterFilter@3f6404aa, org.springframework.security.web.authentication.logout.LogoutFilter@7f7b15d4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d4bb9cd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@ab58ff, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6cb2e94, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a35f473, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ff55eff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16de7a51, org.springframework.security.web.access.ExceptionTranslationFilter@47a246ec, org.springframework.security.web.access.intercept.AuthorizationFilter@10fa7b74]
-20:57:11.505 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-20:57:11.505 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-20:57:11.505 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-20:57:11.509 [main] INFO  c.e.w.controller.EmployeeTest - Started EmployeeTest in 0.582 seconds (process running for 7.411)
-20:57:11.516 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
-20:57:11.522 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-20:57:11.522 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-20:57:11.522 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+  <testcase name="givenNoBody_whenEmptyJsonArray" classname="com.example.weblibrary.controller.EmployeeTest" time="0.014">
+    <system-out><![CDATA[18:32:35.617 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
 ]]></system-out>
   </testcase>
-  <testcase name="whenNotFound_getStatus404" classname="com.example.weblibrary.controller.EmployeeTest" time="0.028">
-    <system-out><![CDATA[
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.1.0)
-
-20:57:11.537 [main] INFO  c.e.w.controller.EmployeeTest - Starting EmployeeTest using Java 20.0.2 with PID 1956 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
-20:57:11.537 [main] INFO  c.e.w.controller.EmployeeTest - No active profile set, falling back to 1 default profile: "default"
-20:57:11.644 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-20:57:11.651 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
-20:57:11.686 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
-20:57:11.688 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:test user=SA
-20:57:11.689 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
-20:57:11.689 [main] INFO  liquibase.database - Set default schema name to PUBLIC
-20:57:11.701 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.702 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.702 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.703 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.704 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.704 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
-20:57:11.705 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
-20:57:11.706 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.707 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
-20:57:11.707 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.708 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_employee.yml::1::developer
-20:57:11.712 [main] INFO  liquibase.changelog - Table employee created
-20:57:11.713 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 2ms
-20:57:11.713 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.714 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_position.yml::1::developer
-20:57:11.715 [main] INFO  liquibase.changelog - Table position created
-20:57:11.715 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 1ms
-20:57:11.715 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_auth_user.yml::3::developer
-20:57:11.717 [main] INFO  liquibase.changelog - Table auth_user created
-20:57:11.717 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 1ms
-20:57:11.718 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_role.yml::4::developer
-20:57:11.719 [main] INFO  liquibase.changelog - Table roles created
-20:57:11.720 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
-20:57:11.720 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_report.yml::1::developer
-20:57:11.721 [main] INFO  liquibase.changelog - Table report created
-20:57:11.721 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
-20:57:11.722 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.722 [main] INFO  liquibase - Update command completed successfully.
-20:57:11.723 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:11.723 [main] INFO  liquibase.lockservice - Successfully released change log lock
-20:57:11.731 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-20:57:11.735 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:11.736 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-20:57:11.737 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-20:57:11.744 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:11.771 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-20:57:11.771 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-20:57:11.822 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-20:57:11.829 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4911d84, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c0b82f3, org.springframework.security.web.context.SecurityContextHolderFilter@6eb0d0ea, org.springframework.security.web.header.HeaderWriterFilter@20e0becd, org.springframework.security.web.authentication.logout.LogoutFilter@2fc8b8c2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6ef5b630, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4c84615a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@62125fb5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28446b82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69b7ac77, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@219521f1, org.springframework.security.web.access.ExceptionTranslationFilter@7176188d, org.springframework.security.web.access.intercept.AuthorizationFilter@14295dca]
-20:57:12.054 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-20:57:12.055 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-20:57:12.055 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-20:57:12.061 [main] INFO  c.e.w.controller.EmployeeTest - Started EmployeeTest in 0.537 seconds (process running for 7.963)
-20:57:12.077 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 10 не найден
-20:57:12.087 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 10 не найден
-20:57:12.091 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-20:57:12.092 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
-20:57:12.093 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+  <testcase name="whenNotFound_getStatus404" classname="com.example.weblibrary.controller.EmployeeTest" time="0.018">
+    <system-out><![CDATA[18:32:35.631 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 10 не найден
+18:32:35.637 [main] ERROR c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 10 не найден
 ]]></system-out>
   </testcase>
-  <testcase name="getEmployeeByPage" classname="com.example.weblibrary.controller.EmployeeTest" time="0.023">
-    <system-out><![CDATA[
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.1.0)
-
-20:57:12.111 [main] INFO  c.e.w.controller.EmployeeTest - Starting EmployeeTest using Java 20.0.2 with PID 1956 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
-20:57:12.111 [main] INFO  c.e.w.controller.EmployeeTest - No active profile set, falling back to 1 default profile: "default"
-20:57:12.198 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-20:57:12.206 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
-20:57:12.236 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
-20:57:12.238 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:test user=SA
-20:57:12.238 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
-20:57:12.239 [main] INFO  liquibase.database - Set default schema name to PUBLIC
-20:57:12.249 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.249 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.249 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.250 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.250 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.250 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
-20:57:12.251 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
-20:57:12.252 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.252 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
-20:57:12.253 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.253 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_employee.yml::1::developer
-20:57:12.258 [main] INFO  liquibase.changelog - Table employee created
-20:57:12.258 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 1ms
-20:57:12.259 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.259 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_position.yml::1::developer
-20:57:12.260 [main] INFO  liquibase.changelog - Table position created
-20:57:12.260 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 1ms
-20:57:12.261 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_auth_user.yml::3::developer
-20:57:12.262 [main] INFO  liquibase.changelog - Table auth_user created
-20:57:12.262 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 1ms
-20:57:12.263 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_role.yml::4::developer
-20:57:12.264 [main] INFO  liquibase.changelog - Table roles created
-20:57:12.265 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
-20:57:12.265 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_report.yml::1::developer
-20:57:12.267 [main] INFO  liquibase.changelog - Table report created
-20:57:12.267 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
-20:57:12.268 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.269 [main] INFO  liquibase - Update command completed successfully.
-20:57:12.269 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.269 [main] INFO  liquibase.lockservice - Successfully released change log lock
-20:57:12.280 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-20:57:12.284 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:12.284 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-20:57:12.285 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-20:57:12.293 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:12.323 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-20:57:12.324 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-20:57:12.364 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-20:57:12.371 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c520c71, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5043e5a7, org.springframework.security.web.context.SecurityContextHolderFilter@1676d8e7, org.springframework.security.web.header.HeaderWriterFilter@6b1e1a07, org.springframework.security.web.authentication.logout.LogoutFilter@6c472bce, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@399e59d7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@8d86c4d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2a04cf8a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@258c38ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@138d8219, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@611f6bfc, org.springframework.security.web.access.ExceptionTranslationFilter@51bce17f, org.springframework.security.web.access.intercept.AuthorizationFilter@58544d28]
-20:57:12.570 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-20:57:12.571 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-20:57:12.571 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-20:57:12.575 [main] INFO  c.e.w.controller.EmployeeTest - Started EmployeeTest in 0.48 seconds (process running for 8.477)
-20:57:12.592 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
-20:57:12.600 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-20:57:12.600 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
-20:57:12.601 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+  <testcase name="getEmployeeByPage" classname="com.example.weblibrary.controller.EmployeeTest" time="0.022">
+    <system-out><![CDATA[18:32:35.658 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getEmployeeByPage, pageIndex = 0
 ]]></system-out>
   </testcase>
-  <testcase name="getEmployeesTest" classname="com.example.weblibrary.controller.EmployeeTest" time="0.014">
-    <system-out><![CDATA[
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.1.0)
-
-20:57:12.616 [main] INFO  c.e.w.controller.EmployeeTest - Starting EmployeeTest using Java 20.0.2 with PID 1956 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
-20:57:12.616 [main] INFO  c.e.w.controller.EmployeeTest - No active profile set, falling back to 1 default profile: "default"
-20:57:12.707 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-20:57:12.714 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 4 JPA repository interfaces.
-20:57:12.745 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
-20:57:12.747 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:test user=SA
-20:57:12.747 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
-20:57:12.747 [main] INFO  liquibase.database - Set default schema name to PUBLIC
-20:57:12.762 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.762 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.763 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.763 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.764 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.764 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
-20:57:12.765 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
-20:57:12.765 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.766 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
-20:57:12.766 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.767 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_employee.yml::1::developer
-20:57:12.771 [main] INFO  liquibase.changelog - Table employee created
-20:57:12.772 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 2ms
-20:57:12.772 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.773 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_position.yml::1::developer
-20:57:12.776 [main] INFO  liquibase.changelog - Table position created
-20:57:12.776 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 2ms
-20:57:12.777 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_auth_user.yml::3::developer
-20:57:12.781 [main] INFO  liquibase.changelog - Table auth_user created
-20:57:12.781 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 3ms
-20:57:12.782 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_role.yml::4::developer
-20:57:12.784 [main] INFO  liquibase.changelog - Table roles created
-20:57:12.785 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
-20:57:12.785 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_report.yml::1::developer
-20:57:12.788 [main] INFO  liquibase.changelog - Table report created
-20:57:12.789 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 2ms
-20:57:12.790 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.790 [main] INFO  liquibase - Update command completed successfully.
-20:57:12.791 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:12.791 [main] INFO  liquibase.lockservice - Successfully released change log lock
-20:57:12.802 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-20:57:12.806 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:12.806 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-20:57:12.807 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-20:57:12.818 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:12.848 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-20:57:12.849 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-20:57:12.888 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-20:57:12.894 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74bc2a19, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@402a6c1, org.springframework.security.web.context.SecurityContextHolderFilter@5afefccc, org.springframework.security.web.header.HeaderWriterFilter@6f034a25, org.springframework.security.web.authentication.logout.LogoutFilter@69a3c55b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@342be37, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3ad3a3ef, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@b93aba8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@235bbc1e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ff48a56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d361feb, org.springframework.security.web.access.ExceptionTranslationFilter@34df1c2, org.springframework.security.web.access.intercept.AuthorizationFilter@2585437a]
-20:57:13.095 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-20:57:13.095 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-20:57:13.096 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
-20:57:13.099 [main] INFO  c.e.w.controller.EmployeeTest - Started EmployeeTest in 0.496 seconds (process running for 9.0)
-20:57:13.110 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
-20:57:13.114 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-20:57:13.114 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
-20:57:13.115 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+  <testcase name="getEmployeesTest" classname="com.example.weblibrary.controller.EmployeeTest" time="0.016">
+    <system-out><![CDATA[18:32:35.677 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
 ]]></system-out>
   </testcase>
-  <testcase name="getEmployeeWithsalaryHigherThan_Test" classname="com.example.weblibrary.controller.EmployeeTest" time="0.013">
-    <system-out><![CDATA[
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.1.0)
-
-20:57:13.126 [main] INFO  c.e.w.controller.EmployeeTest - Starting EmployeeTest using Java 20.0.2 with PID 1956 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
-20:57:13.126 [main] INFO  c.e.w.controller.EmployeeTest - No active profile set, falling back to 1 default profile: "default"
-20:57:13.210 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-20:57:13.218 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
-20:57:13.253 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
-20:57:13.254 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:test user=SA
-20:57:13.254 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
-20:57:13.255 [main] INFO  liquibase.database - Set default schema name to PUBLIC
-20:57:13.270 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.271 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.271 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.272 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.272 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.272 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
-20:57:13.273 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
-20:57:13.274 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.274 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
-20:57:13.275 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.275 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_employee.yml::1::developer
-20:57:13.278 [main] INFO  liquibase.changelog - Table employee created
-20:57:13.278 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 1ms
-20:57:13.279 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.279 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_position.yml::1::developer
-20:57:13.280 [main] INFO  liquibase.changelog - Table position created
-20:57:13.280 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 1ms
-20:57:13.280 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_auth_user.yml::3::developer
-20:57:13.281 [main] INFO  liquibase.changelog - Table auth_user created
-20:57:13.281 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 1ms
-20:57:13.282 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_role.yml::4::developer
-20:57:13.283 [main] INFO  liquibase.changelog - Table roles created
-20:57:13.283 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
-20:57:13.284 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_report.yml::1::developer
-20:57:13.284 [main] INFO  liquibase.changelog - Table report created
-20:57:13.285 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
-20:57:13.285 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.285 [main] INFO  liquibase - Update command completed successfully.
-20:57:13.285 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.285 [main] INFO  liquibase.lockservice - Successfully released change log lock
-20:57:13.294 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-20:57:13.297 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:13.298 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-20:57:13.298 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-20:57:13.305 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:13.329 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-20:57:13.329 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-20:57:13.365 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-20:57:13.371 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c6dfdb1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54c542df, org.springframework.security.web.context.SecurityContextHolderFilter@40fef04c, org.springframework.security.web.header.HeaderWriterFilter@23ea8293, org.springframework.security.web.authentication.logout.LogoutFilter@5698fc85, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d804450, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@417ea5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@68548f59, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e2ffb8e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77c894d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6779f4c7, org.springframework.security.web.access.ExceptionTranslationFilter@219912ec, org.springframework.security.web.access.intercept.AuthorizationFilter@6e7a4af4]
-20:57:13.572 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-20:57:13.572 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-20:57:13.572 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-20:57:13.575 [main] INFO  c.e.w.controller.EmployeeTest - Started EmployeeTest in 0.459 seconds (process running for 9.476)
-20:57:13.585 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
-20:57:13.585 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
-20:57:13.588 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-20:57:13.589 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
-20:57:13.589 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+  <testcase name="testPostgresql" classname="com.example.weblibrary.controller.EmployeeTest" time="0.033"/>
+  <testcase name="getEmployeeWithsalaryHigherThan_Test" classname="com.example.weblibrary.controller.EmployeeTest" time="0.017">
+    <system-out><![CDATA[18:32:35.729 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
+18:32:35.730 [main] INFO  c.e.w.service.EmployeeServiceImpl - Запрошены сотрудники с зарплатой большей чем 15000
 ]]></system-out>
   </testcase>
   <testcase name="deleteEmployee_Test" classname="com.example.weblibrary.controller.EmployeeTest" time="0.023">
-    <system-out><![CDATA[
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.1.0)
-
-20:57:13.601 [main] INFO  c.e.w.controller.EmployeeTest - Starting EmployeeTest using Java 20.0.2 with PID 1956 (started by Ruslan in C:\Users\Ruslan\IdeaProjects\Spring_Boot_MVC)
-20:57:13.601 [main] INFO  c.e.w.controller.EmployeeTest - No active profile set, falling back to 1 default profile: "default"
-20:57:13.680 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-20:57:13.686 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 4 JPA repository interfaces.
-20:57:13.715 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
-20:57:13.716 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection conn70: url=jdbc:h2:mem:test user=SA
-20:57:13.716 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
-20:57:13.716 [main] INFO  liquibase.database - Set default schema name to PUBLIC
-20:57:13.726 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.726 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.726 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.727 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.727 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.727 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
-20:57:13.728 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
-20:57:13.728 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.729 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
-20:57:13.729 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.729 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_employee.yml::1::developer
-20:57:13.732 [main] INFO  liquibase.changelog - Table employee created
-20:57:13.732 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_employee.yml::1::developer ran successfully in 1ms
-20:57:13.733 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.733 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_position.yml::1::developer
-20:57:13.734 [main] INFO  liquibase.changelog - Table position created
-20:57:13.734 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_position.yml::1::developer ran successfully in 1ms
-20:57:13.735 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_auth_user.yml::3::developer
-20:57:13.736 [main] INFO  liquibase.changelog - Table auth_user created
-20:57:13.736 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_auth_user.yml::3::developer ran successfully in 1ms
-20:57:13.736 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_role.yml::4::developer
-20:57:13.737 [main] INFO  liquibase.changelog - Table roles created
-20:57:13.737 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_role.yml::4::developer ran successfully in 1ms
-20:57:13.738 [main] INFO  liquibase.executor - Changelog query completed.
-Running Changeset: liquibase/changesets/create_report.yml::1::developer
-20:57:13.739 [main] INFO  liquibase.changelog - Table report created
-20:57:13.739 [main] INFO  liquibase.changelog - ChangeSet liquibase/changesets/create_report.yml::1::developer ran successfully in 1ms
-20:57:13.740 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.740 [main] INFO  liquibase - Update command completed successfully.
-20:57:13.740 [main] INFO  liquibase.executor - Changelog query completed.
-20:57:13.741 [main] INFO  liquibase.lockservice - Successfully released change log lock
-20:57:13.749 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-20:57:13.752 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:13.752 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-20:57:13.753 [main] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-20:57:13.759 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-20:57:13.780 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-20:57:13.780 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-20:57:13.811 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-20:57:13.816 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@dc62b3c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17020207, org.springframework.security.web.context.SecurityContextHolderFilter@43aad2e3, org.springframework.security.web.header.HeaderWriterFilter@64004f10, org.springframework.security.web.authentication.logout.LogoutFilter@5cbe7bb8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@228af76e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@64eb6eda, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2321c420, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1bd6c0de, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f5d95b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@566576ad, org.springframework.security.web.access.ExceptionTranslationFilter@7ffcd8df, org.springframework.security.web.access.intercept.AuthorizationFilter@4f8f7314]
-20:57:14.002 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-20:57:14.002 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-20:57:14.002 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
-20:57:14.005 [main] INFO  c.e.w.controller.EmployeeTest - Started EmployeeTest in 0.415 seconds (process running for 9.907)
-20:57:14.020 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 3удалён
-20:57:14.024 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
-20:57:14.028 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-20:57:14.028 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
-20:57:14.029 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+    <system-out><![CDATA[18:32:35.750 [main] INFO  c.e.w.service.EmployeeServiceImpl - Сотрудник с ID 3удалён
+18:32:35.754 [main] INFO  c.e.w.service.EmployeeServiceImpl - Вызван метод getAllEmployees()
 ]]></system-out>
   </testcase>
 </testsuite>

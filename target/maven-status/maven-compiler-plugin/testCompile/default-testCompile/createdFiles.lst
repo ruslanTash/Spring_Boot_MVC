@@ -1,5 +1,4 @@
 com\example\weblibrary\controller\ReportTest.class
-com\example\weblibrary\PostgresqlIntegrationTest.class
 com\example\weblibrary\service\EmployeeServiceImplTest.class
 com\example\weblibrary\WebLibraryApplicationTests.class
 com\example\weblibrary\controller\InfoTest.class

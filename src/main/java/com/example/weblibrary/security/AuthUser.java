@@ -15,7 +15,7 @@ public class AuthUser {
     // Создаем поле id для хранения идентификатора пользователя.
     @Id
     // Используем AUTO-генерацию идентификаторов.
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
     // Создаем поле username для хранения имени пользователя.

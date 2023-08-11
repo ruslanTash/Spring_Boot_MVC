@@ -17,7 +17,7 @@ import java.util.List;
 public class Position implements Serializable {
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer positionId;
     private String positionName;
 

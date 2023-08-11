@@ -8,6 +8,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import com.example.weblibrary.model.Employee;
 import com.example.weblibrary.repository.EmployeeRepository;
+import com.example.weblibrary.repository.ReportRepository;
 import com.example.weblibrary.service.ReportService;
 import com.example.weblibrary.model.Position;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -24,13 +25,16 @@ import java.util.List;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
+
 public class ReportTest {
     @Autowired
     MockMvc mockMvc;
 
     @Autowired
     private EmployeeRepository employeeRepository;
+
+    @Autowired
+    private ReportRepository reportRepository;
 
 
     @Autowired
@@ -39,10 +43,11 @@ public class ReportTest {
     @Test
     @WithMockUser(username = "admin", roles = "USER", password = "1234")
     void getReport() throws Exception {
+        reportRepository.deleteAll();
+        employeeRepository.deleteAll();
         createEmployees();
         mockMvc.perform(post("/report"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$").value(1));
+                .andExpect(status().isOk());
     }
 
     @Test

@@ -13,9 +13,20 @@ import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.web.servlet.MockMvc;
+import org.testcontainers.containers.PostgreSQLContainer;
+import org.testcontainers.junit.jupiter.Testcontainers;
 
+import org.springframework.test.context.DynamicPropertyRegistry;
+import org.springframework.test.context.DynamicPropertySource;
+import org.testcontainers.junit.jupiter.Container;
+
+
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -23,7 +34,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
+@Testcontainers
 public class EmployeeTest {
 
     @Autowired
@@ -32,10 +43,37 @@ public class EmployeeTest {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    @Container
+    private static final PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:latest")
+            .withUsername("postgres")
+            .withPassword("8258");
+
+    @DynamicPropertySource
+    static void postgresProperties(DynamicPropertyRegistry registry) {
+        registry.add("spring.datasource.url", postgres::getJdbcUrl);
+        registry.add("spring.datasource.username", postgres::getUsername);
+        registry.add("spring.datasource.password", postgres::getPassword);
+    }
+
+    @Autowired
+    private DataSource dataSource;
+
+    @Test
+    void testPostgresql() throws SQLException {
+        try (Connection conn = dataSource.getConnection()) {
+            assertThat(conn).isNotNull();
+        }
+    }
+
+
+
+
+
 
     @Test
     @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
     void givenNoBody_whenEmptyJsonArray() throws Exception {
+        employeeRepository.deleteAll();
         // Имитируем GET-запрос к "/user"
         mockMvc.perform(get("/admin/employees/all"))
                 // Проверяем, что статус ответа — 200 (OK)
@@ -50,6 +88,7 @@ public class EmployeeTest {
     @Test
     @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
     void getEmployeesTest() throws Exception {
+        employeeRepository.deleteAll();
         createEmployees();
         mockMvc.perform(get("/admin/employees/all"))
                 .andExpect(status().isOk())
@@ -64,6 +103,7 @@ public class EmployeeTest {
     @Test
     @WithMockUser(username = "admin", roles = "USER", password = "1234")
     void getEmployeeWithHighestSalary() throws Exception {
+        employeeRepository.deleteAll();
         createEmployees();
         mockMvc.perform(get("/employees/withHighestSalary"))
                 .andExpect(status().isOk())
@@ -73,6 +113,7 @@ public class EmployeeTest {
     @Test
     @WithMockUser(username = "admin", roles = "USER", password = "1234")
     void getEmployeeWithsalaryHigherThan_Test() throws Exception {
+        employeeRepository.deleteAll();
         createEmployees();
         mockMvc.perform(get("/employees/salaryHigherThan?salary=15000"))
                 .andExpect(status().isOk())
@@ -86,6 +127,7 @@ public class EmployeeTest {
     @Test
     @WithMockUser(username = "admin", roles = "USER", password = "1234")
     void whenNotFound_getStatus404() throws Exception {
+        employeeRepository.deleteAll();
         mockMvc.perform(get("/employees/{id}", 10))
                 .andExpect(status().isNotFound());
         mockMvc.perform(get("/employees/{id}/fullInfo", 10))
@@ -96,6 +138,7 @@ public class EmployeeTest {
     @Test
     @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
     void addEmployeeFromFile() throws Exception {
+        employeeRepository.deleteAll();
         createEmployees();
         Employee employee = new Employee(4, "Следующий", 40000, new Position(1, "Позишен №1"));
         ObjectMapper objectMapper = new ObjectMapper();
@@ -114,6 +157,7 @@ public class EmployeeTest {
     @Test
     @WithMockUser(username = "admin", roles = "ADMIN", password = "1234")
     void deleteEmployee_Test() throws Exception {
+        employeeRepository.deleteAll();
         createEmployees();
         mockMvc.perform(delete("/admin/employees/3"))
                 .andExpect(status().isOk());
@@ -128,6 +172,7 @@ public class EmployeeTest {
     @Test
     @WithMockUser(username = "admin", roles = "USER", password = "1234")
     void getEmployeeByPage() throws Exception {
+        employeeRepository.deleteAll();
         createEmployees();
         mockMvc.perform(get("/employees/page?page=0")
                         .param("page", String.valueOf(0)))
@@ -138,6 +183,7 @@ public class EmployeeTest {
 
 
     void createEmployees() {
+
         List<Employee> employeeList = List.of(
                 new Employee(1, "Первый", 10000, new Position(1, "Позишен №1")),
                 new Employee(2, "Второй", 20000, new Position(1, "Позишен №1")),
